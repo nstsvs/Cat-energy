@@ -1,0 +1,35 @@
+.stats-slim__list {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.stats-slim__value {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+}
+
+.stats-slim__text {
+  width: 54px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+}
+
+.stats-slim__description {
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.43;
+  text-align: center;
+  color: #111111;
+}
