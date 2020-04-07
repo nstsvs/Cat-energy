@@ -1,0 +1,43 @@
+.extra-list__wrapper {
+  margin-bottom: 14px;
+}
+
+.extra-list__title {
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  color: #222222;
+}
+
+.extra-list__properties-text {
+  width: 236px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 1;
+  color: #444444;
+}
+
+.extra-list__properties-value {
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 1;
+  text-align: right;
+  color: #444444;
+}
+
+.extra-list__button {
+  width: 280px;
+  padding-left: 111px;
+  padding-right: 108px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #68b738;
+  color: #ffffff;
+}
