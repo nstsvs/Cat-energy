@@ -6,3 +6,18 @@
 .header__logo-image {
   margin-left: 20px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1200px;
+  }
+}
+
+@import "global/variables.scss";

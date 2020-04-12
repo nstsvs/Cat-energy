@@ -21,3 +21,17 @@
   margin-bottom: 20px;
   margin-top: 42px;
 }
+
+@import "global/variables.scss";
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+  }
+}
