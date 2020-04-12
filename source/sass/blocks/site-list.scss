@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .site-list {
   text-align: center;
   padding-left: 0;
@@ -21,8 +23,6 @@
   margin-bottom: 20px;
   margin-top: 42px;
 }
-
-@import "global/variables.scss";
 
 @media (min-width: $tablet-width) {
   .site-list {
