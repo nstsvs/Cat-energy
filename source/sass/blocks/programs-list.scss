@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .programs-list {
   padding-left: 0;
 }
@@ -42,4 +44,30 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .programs-list__item {
+    width: 708px;
+  }
+  .programs-list__item-title {
+    font-size: 36px;
+    line-height: 1.03;
+    text-align: left;
+    color: #111111;
+  }
+  .programs-list__item-description {
+    width: 372px;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .programs-list__item-catalog {
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
 }
