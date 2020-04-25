@@ -1,5 +1,10 @@
+.extra-products {
+  padding-left: 20px;
+  margin-bottom: 33px;
+}
+
 .extra-products__title {
-  margin-left: 20px;
+  margin: 0;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -7,15 +12,16 @@
 }
 
 .extra-products__list {
-  margin-left: 20px;
+  margin: 0;
   padding: 0;
+  margin-bottom: 33px;
   list-style: none;
 }
 
 .extra-products__gift {
-  margin-left: 20px;
-  margin-top: 57px;
+  margin: 0;
+  padding-left: 55px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  width: 280px;
+  width: 225px;
   height: 289px;
 }

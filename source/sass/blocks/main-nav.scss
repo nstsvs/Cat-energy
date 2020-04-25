@@ -5,7 +5,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .test {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .main-nav {
-   width: 768px;
+    padding-top: 55px;
+  }
+
+  .test {
+    margin-top: 0;
+    justify-content: space-around;
   }
 }

@@ -1,5 +1,8 @@
+@import "global/variables.scss";
+
 .stats-slim__list {
   display: flex;
+  margin: 0;
   padding: 0;
   justify-content: space-around;
   list-style: none;
@@ -32,4 +35,32 @@
   line-height: 1.43;
   text-align: center;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .stats-slim__list {
+    display: inline-flex;
+    margin-right: 169px;
+    padding-left: 30px;
+  }
+
+  .stats-slim__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  .stats-slim__value {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .stats-slim__text {
+    font-size: 14px;
+  }
+
+  .stats-slim__description {
+    display: inline-flex;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+  }
 }
