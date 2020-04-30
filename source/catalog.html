@@ -37,7 +37,7 @@
                 <picture>
                   <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
-                  <img src="img/chicken-small-mobile@1x.jpg" alt="Баночка с кормом">
+                  <img class="product-list__img" src="img/chicken-small-mobile@1x.jpg" alt="Баночка с кормом">
                 </picture>
               </a>
               <div class="product-list__wrap-desc">
@@ -103,7 +103,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
-                <img src="img/fish-small-mobile@1x.jpg" alt="Рыба 500 грамм">
+                <img class="product-list__img" src="img/fish-small-mobile@1x.jpg" alt="Рыба 500 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -169,7 +169,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png">
-                <img src="img/buckwheat-small-mobile@1x.jpg" alt="Гречка 500 грамм">
+                <img class="product-list__img" src="img/buckwheat-small-mobile@1x.jpg" alt="Гречка 500 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -235,7 +235,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-                <img src="img/rice-small-mobile@1x.jpg" alt="Рис 500 грамм">
+                <img class="product-list__img" src="img/rice-small-mobile@1x.jpg" alt="Рис 500 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -262,9 +262,7 @@
             </div>
             <a class="product-list__button" href="#">Заказать</a>
           </li>
-        </ul>
-      <div class="pagination">
-        <div class="pagination__wrapper">
+          <li class="product-list__item pagination">
           <span class="pagination__title">
             Показать еще 100500 товаров
           </span>
@@ -272,10 +270,10 @@
             На самом деле вкусов гораздо больше!
           </p>
           <a class="pagination__button" href="#">Показать все</a>
-        </div>
-      </div>
+        </li>
+        </ul>
     </section class="product-list__img">
-    <section class="extra-products">
+    <section class="extra-products container">
       <div class="extra-products__wrapper">
         <h2 class="extra-products__title">Дополнительные товары</h2>
         <ul class="extra-products__list">
@@ -345,7 +343,7 @@
     </section>
     <section class="contacts">
       <h3 class="visually-hidden">Контакты</h3>
-      <div class="contacts__wrapper-catalog">
+      <div class="contacts__wrapper-catalog container">
         <p class="contacts__partners">
           Приглашаем к сотрудничеству дилеров!
         </p>

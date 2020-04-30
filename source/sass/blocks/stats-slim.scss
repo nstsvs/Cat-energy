@@ -64,3 +64,13 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats-slim__list {
+    padding-left: 110px;
+  }
+
+  .stats-slim__description {
+    padding-left: 110px;
+  }
+}

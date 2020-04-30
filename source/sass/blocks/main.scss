@@ -34,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .main {
-    margin-left: 40px;
+    max-width: 100%;
   }
 
   .main__image {
@@ -62,7 +62,7 @@
   }
 
   .main__catalog {
-    padding-bottom: 136px;
+    padding-bottom: 74px;
     font-size: 60px;
     line-height: 1;
   }
@@ -70,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .main {
-    margin: 0;
+    max-width: 100%;
   }
 
   .main__order {
@@ -89,6 +89,7 @@
   }
 
   .main__catalog {
+    padding-left: 113px;
     font-size: 60px;
     line-height: 1;
     margin-left: 0;

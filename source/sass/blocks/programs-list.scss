@@ -4,7 +4,7 @@
   margin: 0;
   padding-right: 20px;
   padding-top: 33px;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .programs-list__item {
@@ -74,13 +74,15 @@
 
 @media (min-width: $desktop-width) {
   .programs-list {
-    display: flex;
-    justify-content: space-between;
     padding-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .programs-list__item {
     width: 455px;
+    padding-left: 52px;
+    padding-right: 56px;
     padding-bottom: 50px;
   }
 

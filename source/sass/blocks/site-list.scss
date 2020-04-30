@@ -49,10 +49,11 @@
 @media (min-width: $desktop-width) {
   .site-list {
     display: flex;
+    padding-left: 255px;
     text-align: center;
   }
 
-  .site-list__title-index {
+  .index {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 400;

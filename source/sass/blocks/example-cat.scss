@@ -28,7 +28,6 @@
 @media (min-width: $tablet-width) {
   .example-cat {
     background-color: #ffffff;
-    width: 680px;
   }
 
   .example-cat__title {
@@ -45,14 +44,31 @@
 
 @media (min-width: $desktop-width) {
   .example-cat {
-    width: 1160px;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff 19%, #f2f2f2 0%);
+  }
+
+  .example-cat__wrap {
+    display: flex;
+  }
+
+  .text-cat {
+    width: 450px;
+  }
+
+  .example-cat__stats {
+    display: inline;
   }
 
   .example-cat__title {
-    padding-left: 0;
+    margin-bottom: 50px;
+    padding-left: 110px;
   }
 
   .example-cat__text {
-    padding-left: 0;
+    padding-left: 111px;
+    padding-top: 76px;
+    padding-bottom: 71px;
+    width: 431px;
   }
 }

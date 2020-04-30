@@ -25,3 +25,15 @@
   width: 225px;
   height: 289px;
 }
+
+@media (min-width: $tablet-width) {
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .extra-products__gift {
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+    width: 100%;
+  }
+}

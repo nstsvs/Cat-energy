@@ -50,6 +50,7 @@
   font-weight: 400;
   line-height: 1;
   text-align: left;
+  color: #111111;
 }
 
 .fieldset__comment {
@@ -83,4 +84,33 @@
 .fieldset__item-profile {
   padding-right: 20px;
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .fieldset__label {
+    font-size: 20px;
+    line-height: 1;
+    color: #222222;
+  }
+
+  .fieldset__input {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .fieldset__legend {
+    width: 100%;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .fieldset__textarea {
+    width: 631px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .fieldset__list-checkbox {
+    display: flex;
+  }
 }

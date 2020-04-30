@@ -13,13 +13,13 @@
         <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__title" href="index.html">Главная</a>
+            <a class="site-list__title index" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__title" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__title index" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__title" href="form.html">Подбор программы</a>
+            <a class="site-list__title index" href="form.html">Подбор программы</a>
           </li>
         </ul>
         </div>
@@ -36,7 +36,7 @@
     <a class="main__order" href="form.html">Подобрать программу</a>
     <section class="programs container">
       <h2 class="visually-hidden">Список программ</h2>
-      <ul class="programs-list">
+      <ul class="programs-list container">
         <li class="programs-list__item">
           <p class="programs-list__item-title">
             Похудение
@@ -84,12 +84,14 @@
         </ul>
       </div>
     </section>
-    <div class="example-cat container">
+    <div class="example-cat">
       <h2 class="example-cat__title">Живой пример</h2>
+    <div class="example-cat__wrap">
+    <div class="text-cat">
       <p class="example-cat__text">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <div class="example-cat__stats stats-slim">
+      <div class="example-cat__stats stats-slim container">
         <ul class="stats-slim__list">
           <li class="stats-slim__item">
             <p class="stats-slim__value">
@@ -112,11 +114,12 @@
           Затраты на питание: 15 000 руб.
         </p>
       </div>
+    </div>
       <div class="example-cat__switch switch-cat">
         <div class="switch-cat__img">
           <picture>
-          <source srcset="../img/before-tablet@1x.png" media="(min-width: 768px)" >
-          <img src="../img/before-mobile@1x.png" width="311" height="232" alt="Как выглядел Борис раньше">
+          <source media="(min-width: 768px)" srcset="/img/before-tablet@1x.png">
+          <img src="/img/before-mobile@1x.png" alt="Как выглядел Борис раньше">
           </picture>
         </div>
         <div class="switch-cat__toggle">
@@ -127,6 +130,7 @@
           <p class="switch-cat__text">
             Стало
           </p>
+        </div>
         </div>
       </div>
     </div>
