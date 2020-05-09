@@ -81,20 +81,8 @@
   }
 
   .product-list__item {
-    height: 509px;
     position: relative;
     background: linear-gradient(to bottom, #ffffff 14%, #f2f2f2 14%);
-  }
-
-  .product-list__img {
-    padding-top: 34px;
-  }
-
-  .product-list__link-img {
-    width: 324px;
-    height: auto;
-    left: 3px;
-    top: -48px;
   }
 
   .product-list__value {
@@ -118,18 +106,12 @@
 
   .product-list__item {
     width: 245px;
-    height: 450px;
     background: linear-gradient(to bottom, #ffffff 19%, #f2f2f2 5%);
     margin-bottom: 142px;
   }
 
-  .product-list__link-img {
-    width: 245px;
-  }
-
   .product-list__wrap {
     width: 250px;
-    height: 351px;
     display: flex;
     padding-bottom: 33px;
     align-items: center;

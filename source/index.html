@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <header class="header-index">
-      <nav class="main-nav">
+      <nav class="main-nav container">
       <div class="test">
         <div class="header__image" aria-label="Логотип Магазина"></div>
         <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
@@ -25,15 +25,17 @@
         </div>
       </nav>
   </header>
-  <main class="main">
+  <main class="main container">
     <section class="slogan container">
-    <h1 class="slogan__title">Функциональное питание для котов</h1>
-    <p class="slogan__description">
-      Занялся собой? Займись котом!
-    </p>
-    </section>
-    <div class="main__image" aria-label="Образец баночки с питанием"></div>
-    <a class="main__order" href="form.html">Подобрать программу</a>
+      <div class="slogan-test">
+        <h1 class="slogan__title">Функциональное питание для котов</h1>
+        <p class="slogan__description">
+          Занялся собой? Займись котом!
+        </p>
+      </section>
+      <div class="main__image" aria-label="Образец баночки с питанием"></div>
+      <a class="main__order container" href="form.html">Подобрать программу</a>
+    </div>
     <section class="programs container">
       <h2 class="visually-hidden">Список программ</h2>
       <ul class="programs-list container">
@@ -119,7 +121,7 @@
         <div class="switch-cat__img">
           <picture>
           <source media="(min-width: 768px)" srcset="/img/before-tablet@1x.png">
-          <img src="/img/before-mobile@1x.png" alt="Как выглядел Борис раньше">
+          <img class="switch-cat__img--before" src="/img/before-mobile@1x.png" alt="Как выглядел Борис раньше">
           </picture>
         </div>
         <div class="switch-cat__toggle">

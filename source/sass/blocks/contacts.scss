@@ -55,7 +55,9 @@
   }
 
   .contacts__wrapper-form,
-  .contacts__wrapper {
+  .contacts__wrapper,
+  .contacts__wrapper-catalog {
+    padding-left: 0;
     justify-content: space-between;
   }
 

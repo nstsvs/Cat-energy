@@ -11,10 +11,13 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
+  }
+
+  .footer__logo-image {
+    padding-left: 0;
   }
 }
 

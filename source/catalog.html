@@ -7,11 +7,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <header class="header">
-    <nav class="main-nav">
+    <nav class="main-nav container">
       <div class="test">
-      <a class="header__logo" href="index.html">
-        <div class="header__image" aria-label="Логотип Магазина"></div>
-      </a>
+        <a class="header__logo" href="index.html">
+          <div class="header__image" aria-label="Логотип Магазина"></div>
+        </a>
       <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item ">
@@ -27,7 +27,7 @@
       </div>
     </nav>
   </header>
-  <main class="main">
+  <main class="main container">
     <h1 class="main__catalog">Каталог продукции</h1>
       <section class="catalog container">
         <ul class="catalog-list product-list">
@@ -70,7 +70,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
-                <img src="img/chicken-big-mobile@1x.jpg" alt="Курица 1000 грамм">
+                <img class="product-list__img" src="img/chicken-big-mobile@1x.jpg" alt="Курица 1000 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -136,7 +136,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
-                <img src="img/fish-big-mobile@1x.jpg" alt="Рыба 1000 грамм">
+                <img class="product-list__img" src="img/fish-big-mobile@1x.jpg" alt="Рыба 1000 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -202,7 +202,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png">
-                <img src="img/buckwheat-big-mobile@1x.jpg" alt="Гречка 1000 грамм">
+                <img class="product-list__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Гречка 1000 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
@@ -235,7 +235,7 @@
               <picture>
                 <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png">
-                <img class="product-list__img" src="img/rice-small-mobile@1x.jpg" alt="Рис 500 грамм">
+                <img class="product-list__img" class="product-list__img" src="img/rice-small-mobile@1x.jpg" alt="Рис 500 грамм">
               </picture>
             </a>
             <div class="product-list__wrap-desc">
