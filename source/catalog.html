@@ -27,9 +27,10 @@
       </div>
     </nav>
   </header>
-  <main class="main container">
+  <main class="main">
     <h1 class="main__catalog">Каталог продукции</h1>
       <section class="catalog container">
+        <div class="catalog__wrapper">
         <ul class="catalog-list product-list">
           <li class="catalog-list__item product-list__item">
             <div class="product-list__wrap">
@@ -272,7 +273,8 @@
           <a class="pagination__button" href="#">Показать все</a>
         </li>
         </ul>
-    </section class="product-list__img">
+        </div>
+    </section>
     <section class="extra-products container">
       <div class="extra-products__wrapper">
         <h2 class="extra-products__title">Дополнительные товары</h2>
@@ -291,7 +293,7 @@
             </div>
             <a class="extra-list__button button" href="#">Заказать</a>
           </li>
-          <li class="extra-list__item extra-list">
+          <li class="extra-products__item extra-list">
             <div class="extra-list__wrapper">
               <p class="extra-list__title">
                 Питьевая вода
@@ -305,7 +307,7 @@
             </div>
             <a class="extra-list__button button" href="#">Заказать</a>
           </li>
-          <li class="extra-list__item extra-list">
+          <li class="extra-products__item extra-list">
             <div class="extra-list__wrapper">
               <p class="extra-list__title">
                 Молоко
@@ -319,7 +321,7 @@
             </div>
             <a class="extra-list__button button" href="#">Заказать</a>
           </li>
-          <li class="extra-list__item extra-list">
+          <li class="extra-products__item extra-list">
             <div class="extra-list__wrapper">
               <p class="extra-list__title">
                 Витамины
@@ -343,7 +345,7 @@
     </section>
     <section class="contacts">
       <h3 class="visually-hidden">Контакты</h3>
-      <div class="contacts__wrapper-catalog container">
+      <div class="contacts__wrapper-catalog">
         <p class="contacts__partners">
           Приглашаем к сотрудничеству дилеров!
         </p>
@@ -354,7 +356,8 @@
       <div class="contacts__map"></div>
     </section>
   </main>
-  <footer class="footer container">
+  <footer class="footer">
+    <div class="footer__wrapper">
     <a class="footer__logo" href="index.html">
     <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
     </a>
@@ -375,6 +378,7 @@
         <a class="html-academy__logo visually-hidden" href="https://htmlacademy.ru" title="Логотип Html Академии">HTML Academy</a>
       </li>
     </ul>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,19 +1,27 @@
 @import "global/variables.scss";
 
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  margin: 0 6.25%;
+}
+
 .footer {
   background-color: #f2f2f2;
 }
 
-.footer__logo-image {
-  padding-top: 39px;
-  padding-left: 96px;
+.footer__logo {
+  padding: 38px 0 27px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
+  .footer__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    flex-direction: row;
   }
 
   .footer__logo-image {
@@ -22,8 +30,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer {
-    width: 100%;
-    justify-content: space-around;
+  .footer__wrapper {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
   }
 }

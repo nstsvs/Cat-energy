@@ -1,3 +1,13 @@
 .catalog {
   margin-bottom: 33px;
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    max-width: 1300px;
+  }
+
+  .catalog__wrapper {
+    margin: 0 3.07%;
+  }
+}

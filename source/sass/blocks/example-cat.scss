@@ -31,13 +31,11 @@
   }
 
   .example-cat__title {
-    padding-left: 0;
     font-size: 60px;
     line-height: 1;
   }
 
   .example-cat__text {
-    padding-left: 0;
     width: 676px;
     font-size: 16px;
     line-height: 1.5;
@@ -56,7 +54,8 @@
   }
 
   .text-cat {
-    width: 450px;
+    flex-direction: column;
+    width: 43.84%;
   }
 
   .example-cat__stats {
@@ -64,11 +63,11 @@
   }
 
   .example-cat__title {
-    margin-bottom: 50px;
+    margin: 65px 44px;
   }
 
   .example-cat__text {
-    padding-left: 111px;
+    padding-left: 40px;
     padding-top: 76px;
     padding-bottom: 71px;
     width: 431px;

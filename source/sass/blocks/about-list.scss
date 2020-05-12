@@ -15,14 +15,13 @@
 
 @media (min-width: $tablet-width) {
   .about-list {
-    margin: 0;
     display: flex;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-list {
-    width: 1200px;
+    margin: 30px 44px 0;
   }
 
   .about-list__item-text {

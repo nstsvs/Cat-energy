@@ -19,7 +19,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-list {
+    flex-direction: row;
+  }
+
   .catalog-list__item {
+    width: 20.08%;
     margin-bottom: 70px;
   }
 }

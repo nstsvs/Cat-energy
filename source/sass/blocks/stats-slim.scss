@@ -70,6 +70,13 @@
   }
 
   .stats-slim__description {
-    padding-left: 110px;
+    z-index: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding-left: 40px;
   }
 }

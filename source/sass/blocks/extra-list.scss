@@ -64,8 +64,33 @@
     font-size: 16px;
     line-height: 1.25;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list__wrapper {
+    width: 577px;
+  }
+
+  .extra-list__properties {
+    width: 290px;
+    margin-left: 25px;
+  }
+
+  .extra-list__properties-text {
+    width: 244px;
+    text-align: right;
+  }
+
+  .extra-list__properties-value {
+    width: 53px;
+    text-align: right;
+  }
 
   .extra-list__button {
-    width: 100%;
+    flex-grow: unset;
+    width: 75px;
+    margin: -2px 0 0;
+    padding-left: 82px;
+    padding-right: 75px;
   }
 }
