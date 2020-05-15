@@ -7,17 +7,11 @@
 
 .contacts__wrapper {
   display: flex;
-  padding-left: 20px;
-  padding-top: 11px;
-  padding-bottom: 9px;
 }
 
 .contacts__wrapper-form,
 .contacts__wrapper-catalog {
   display: flex;
-  padding-left: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: #f2f2f2;
 }
 
@@ -57,7 +51,6 @@
   .contacts__wrapper-form,
   .contacts__wrapper,
   .contacts__wrapper-catalog {
-    padding-left: 0;
     justify-content: space-between;
   }
 

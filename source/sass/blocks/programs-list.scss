@@ -44,8 +44,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programs-list {
+    padding-right: 0;
+    margin: 0 3.9%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
   .programs-list__item {
-    width: 608px;
+    margin-bottom: 30px;
   }
 
   .programs-list__item-title {
@@ -74,9 +80,11 @@
 
 @media (min-width: $desktop-width) {
   .programs-list {
+    padding-right: 20px;
     padding-top: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .programs-list__item {

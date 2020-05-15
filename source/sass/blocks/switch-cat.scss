@@ -18,9 +18,15 @@
 
 @media (min-width: $tablet-width) {
   .switch-cat__img {
+    position: relative;
     height: 517px;
     width: 338px;
     padding-right: 0;
+  }
+
+  .switch-cat__img--before {
+    position: absolute;
+    top: -30%;
   }
 }
 

@@ -40,6 +40,14 @@
     font-size: 16px;
     line-height: 1.5;
   }
+
+  .example-cat__stats {
+    margin-bottom: 246px;
+  }
+
+  .example-cat__switch {
+    background: linear-gradient(to right,#f2f2f2 50%,#eaeaea 50%);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -63,7 +71,7 @@
   }
 
   .example-cat__title {
-    margin: 65px 44px;
+    margin: 65px 32px;
   }
 
   .example-cat__text {

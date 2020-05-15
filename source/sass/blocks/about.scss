@@ -9,6 +9,15 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about {
+    margin-top: 43px;
+    margin-bottom: 27px;
+  }
+
+  .about__wrapper {
+    margin: 0 3.9%;
+  }
+
   .about__title {
     font-size: 60px;
     font-weight: 400;
@@ -20,9 +29,5 @@
 @media (min-width: $desktop-width) {
   .about {
     max-width: 1300px;
-  }
-
-  .about__title {
-    margin: 70px 44px 0;
   }
 }

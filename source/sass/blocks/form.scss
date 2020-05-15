@@ -78,20 +78,17 @@
 
 @media (min-width: $desktop-width) {
   .form__title {
-    max-width: 1300px;
     margin: 75px auto 55px;
     padding: 0 40px;
   }
 
   .form {
     flex-wrap: wrap;
-    max-width: 1300px;
     margin: 75px auto 55px;
   }
 
   .form__text {
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto 52px;
     padding: 0;
   }
