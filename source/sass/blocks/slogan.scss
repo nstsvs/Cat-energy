@@ -1,7 +1,7 @@
+@import "global/variables.scss";
+
 .slogan {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  height: 305px;
-  width: 100%;
 }
 
 .slogan__title {
@@ -18,10 +18,66 @@
 .slogan__description {
   text-align: center;
   font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
   font-size: 14px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan {
+    position: relative;
+    background: none;
+  }
+
+  .slogan-test {
+    position: relative;
+  }
+
+  .slogan__title {
+    width: 414px;
+    padding-left: 40px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
+
+  .slogan__description {
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: left;
+    color: #111111;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan {
+    width: 574px;
+    top: -549px;
+    left: -25%;
+    position: relative;
+    display: block;
+  }
+
+  .slogan-test {
+    margin-bottom: -738px;
+  }
+
+  .slogan__title {
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+  }
+
+  .slogan__description {
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+  }
 }

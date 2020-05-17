@@ -1,9 +1,11 @@
+@import "global/variables.scss";
+
 .example-cat {
   background-color: #f2f2f2;
 }
 
 .example-cat__title {
-  margin-left: 20px;
+  padding-top: 22px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -11,11 +13,69 @@
 }
 
 .example-cat__text {
-  width: 266px;
-  margin-left: 20px;
+  margin: 0;
+  padding-top: 22px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .example-cat {
+    background: linear-gradient(to bottom, #ffffff 47%, #f2f2f2 25%);
+    background-color: #ffffff;
+  }
+
+  .example-cat__title {
+    margin: auto;
+    padding-left: 0;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .example-cat__text {
+    padding-left: 0;
+    width: auto;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .example-cat__stats {
+    margin-bottom: 246px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-cat {
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff 19%, #f2f2f2 0%);
+  }
+
+  .example-cat__wrap {
+    position: relative;
+    display: flex;
+  }
+
+  .text-cat {
+    flex-direction: column;
+    width: 43.84%;
+  }
+
+  .example-cat__stats {
+    display: inline;
+  }
+
+  .example-cat__title {
+    padding-left: 0;
+    margin: auto;
+  }
+
+  .example-cat__text {
+    padding-left: 0;
+    padding-top: 76px;
+    padding-bottom: 71px;
+    width: 431px;
+  }
 }

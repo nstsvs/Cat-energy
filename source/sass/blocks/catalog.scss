@@ -1,0 +1,16 @@
+.catalog {
+  margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}

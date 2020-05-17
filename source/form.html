@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <header class="header">
     <nav class="main-nav container">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип Кэт Энерджи">
+      <div class="test">
+      <a class="header__logo" href="index.html">
+        <div class="header__image" aria-label="Логотип Магазина"></div>
       </a>
       <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
@@ -22,12 +24,13 @@
           <a class="site-list__title" href="form.html">Подбор программы</a>
         </li>
       </ul>
+      </div>
     </nav>
   </header>
-  <main class="main container">
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">
+  <main class="main">
+    <h1 class="form__title container">Подбор программы</h1>
+    <form class="form container" action="https://echo.htmlacademy.ru" method="post">
+    <p class="form__text">
           Заполните анкету и мы подберем программу питания для вашего кота
         </p>
         <fieldset class="form__fieldset fieldset">
@@ -81,7 +84,7 @@
         </fieldset>
         <fieldset class="form__fieldset fieldset">
           <legend class="fieldset__legend fieldset__add">Дополнительно</legend>
-          <ul class="fieldset__list">
+          <ul class="fieldset__list-checkbox">
             <li class="fieldset__item">
               <input class="fieldset__checkbox visually-hidden" id="input-sugar" type="checkbox" name="sugar" checked>
               <label class="fieldset__label" for="input-sugar">Сахарозаменитель</label>
@@ -100,12 +103,14 @@
             </li>
           </ul>
         </fieldset>
+        <div class="form__submit">
         <button class="form__button button" type="submit">Отправить заявку</button>
         <small class="form__required">* — Обязательные поля</small>
+        </div>
     </form>
-    <section class="contacts container">
+    <section class="contacts contacts__form">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper-form">
+      <div class="contacts__wrapper-form container">
         <p class="contacts__partners">
           Приглашаем к сотрудничеству дилеров!
         </p>
@@ -116,8 +121,8 @@
       <div class="contacts__map"></div>
     </section>
   </main>
-  <footer class="footer container">
   <footer class="footer">
+    <div class="footer__wrapper container">
     <a class="footer__logo" href="index.html">
       <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Текстовый логотип Кэт Энерджи">
     </a>
@@ -139,6 +144,7 @@
         <a class="html-academy__logo" href="https://htmlacademy.ru" title="Логотип Html Академии">HTML Academy</a>
       </li>
     </ul>
+    </div>
   </footer>
 </body>
 </html>

@@ -1,6 +1,4 @@
-.switch-cat {
-  margin-left: 20px;
-}
+@import "global/variables.scss";
 
 .switch-cat__text {
   display: inline;
@@ -13,7 +11,28 @@
 }
 
 .switch-cat__toggle {
-  margin-top: 35px;
+  padding-top: 35px;
   padding-bottom: 38px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .switch-cat__img {
+    position: relative;
+    height: 517px;
+    width: 338px;
+    padding-right: 0;
+  }
+
+  .switch-cat__img--before {
+    position: absolute;
+    top: -30%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .switch-cat__img--before {
+    position: absolute;
+    top: -22%;
+  }
 }

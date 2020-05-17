@@ -28,7 +28,6 @@
 }
 
 .extra-list__button {
-  width: 280px;
   padding-left: 111px;
   padding-right: 108px;
   padding-top: 8px;
@@ -40,4 +39,58 @@
   text-decoration: none;
   background-color: #68b738;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-list__wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .extra-list__properties-text {
+    padding-right: 52px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .extra-list__title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .extra-list__properties-value {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list__wrapper {
+    width: 577px;
+  }
+
+  .extra-list__properties {
+    width: 290px;
+    margin-left: 25px;
+  }
+
+  .extra-list__properties-text {
+    width: 244px;
+    text-align: right;
+  }
+
+  .extra-list__properties-value {
+    width: 53px;
+    text-align: right;
+  }
+
+  .extra-list__button {
+    flex-grow: unset;
+    width: 75px;
+    margin: -2px 0 0;
+    padding-left: 82px;
+    padding-right: 75px;
+  }
 }

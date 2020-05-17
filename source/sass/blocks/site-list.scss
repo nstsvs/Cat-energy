@@ -1,6 +1,9 @@
+@import "global/variables.scss";
+
 .site-list {
   text-align: center;
   padding-left: 0;
+  display: block;
   list-style: none;
 }
 
@@ -14,10 +17,48 @@
 }
 
 .site-list__item {
-  margin-top: 34px;
+  margin-bottom: 20px;
 }
 
-.site-list__item:not(:first-child) {
-  margin-bottom: 20px;
-  margin-top: 42px;
+@media (min-width: $tablet-width) {
+  .site-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .site-list__title {
+    color: #222222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.39;
+    width: auto;
+    margin: 0;
+  }
+
+  .site-list__item {
+    margin-bottom: 0;
+  }
+
+  .site-list__item:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    padding-left: 255px;
+    text-align: center;
+  }
+
+  .index {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+  }
 }

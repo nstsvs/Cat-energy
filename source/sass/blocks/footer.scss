@@ -1,9 +1,40 @@
+@import "global/variables.scss";
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .footer {
-  margin-top: -38px;
   background-color: #f2f2f2;
 }
 
-.footer__logo-image {
-  padding-top: 39px;
-  margin-left: 96px;
+.footer__logo {
+  padding: 38px 0 27px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer__logo-image {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__wrapper {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -1,5 +1,11 @@
+@import "global/variables.scss";
+
 .main__image {
-  margin-top: -139px;
+  position: relative;
+  background: url("../img/index-can-mobile@1x.png") no-repeat;
+  width: 280px;
+  height: 270px;
+  margin-top: 28px;
   margin-bottom: 5px;
   margin-left: 20px;
 }
@@ -12,7 +18,6 @@
   margin-left: 20px;
   font-weight: 400;
   line-height: 1.29;
-  font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -22,7 +27,63 @@
 .main__catalog {
   font-weight: 400;
   line-height: 1.67;
-  margin-left: 22px;
   font-size: 36px;
   color: #111111;
+}
+
+@media (min-width: $tablet-width) {
+  .main__image {
+    left: 5%;
+    position: relative;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    height: 609px;
+    width: 709px;
+    margin: 0;
+    margin-top: -7px;
+  }
+
+  .main__order {
+    left: 3%;
+    position: relative;
+    z-index: 1;
+    top: -581px;
+    display: block;
+    width: 194px;
+    padding-left: 25px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 11px;
+    font-size: 20px;
+    line-height: 1;
+    background-color: #68b738;
+  }
+
+  .main__catalog {
+    margin: auto;
+    padding-bottom: 74px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__order {
+    top: -500px;
+    left: 9%;
+  }
+
+  .main__image {
+    top: -259px;
+    left: 70%;
+    position: relative;
+    background: url("../img/index-can-desktop@1x.png") no-repeat;
+    height: 499px;
+    width: 552px;
+    margin: 0;
+  }
+
+  .main__catalog {
+    font-size: 60px;
+    line-height: 1;
+  }
 }

@@ -1,3 +1,26 @@
+@import "global/variables.scss";
+
 .main-nav {
   padding-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .test {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 55px;
+  }
+
+  .test {
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
