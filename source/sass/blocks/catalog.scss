@@ -6,19 +6,11 @@
   .catalog {
     margin: 0 auto;
   }
-
-  .catalog__wrapper {
-    margin: 0 3.9%;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog {
     max-width: 1300px;
     margin: 0 auto;
-  }
-
-  .catalog__wrapper {
-    margin: 0 3.07%;
   }
 }

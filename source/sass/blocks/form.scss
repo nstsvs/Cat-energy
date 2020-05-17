@@ -84,17 +84,25 @@
 
   .form {
     flex-wrap: wrap;
-    margin: 75px auto 55px;
+    margin-top: 75px;
+    margin-bottom: 82px;
+    justify-content: space-between;
+    display: flex;
   }
 
   .form__text {
-    width: 100%;
+    width: 29%;
     margin: 0 auto 52px;
-    padding: 0;
+    padding: 0 883px 0 0;
   }
 
   .form__fieldset {
+    padding: 0;
     width: 570px;
+    display: flex;
+  }
+
+  .form__submit {
     display: block;
   }
 }

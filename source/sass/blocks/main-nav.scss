@@ -8,7 +8,7 @@
   .test {
     margin-top: 35px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -19,7 +19,8 @@
   }
 
   .test {
-    margin-top: 0;
-    justify-content: space-around;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }

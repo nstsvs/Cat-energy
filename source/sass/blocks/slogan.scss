@@ -2,7 +2,6 @@
 
 .slogan {
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  height: 305px;
 }
 
 .slogan__title {
@@ -27,12 +26,17 @@
 
 @media (min-width: $tablet-width) {
   .slogan {
+    position: relative;
     background: none;
+  }
+
+  .slogan-test {
+    position: relative;
   }
 
   .slogan__title {
     width: 414px;
-    padding-left: 100px;
+    padding-left: 40px;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
@@ -41,7 +45,7 @@
   }
 
   .slogan__description {
-    padding-left: 100px;
+    padding-left: 40px;
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
@@ -53,13 +57,27 @@
 @media (min-width: $desktop-width) {
   .slogan {
     width: 574px;
-    top: 201px;
-    left: 3%;
-    position: absolute;
+    top: -549px;
+    left: -25%;
+    position: relative;
     display: block;
   }
 
   .slogan-test {
-    box-sizing: border-box;
+    margin-bottom: -738px;
+  }
+
+  .slogan__title {
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    top: -12px;
+  }
+
+  .slogan__description {
+    left: 5%;
+    position: relative;
+    z-index: 1;
+    top: -12px;
   }
 }

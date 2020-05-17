@@ -1,5 +1,9 @@
 @import "global/variables.scss";
 
+.about {
+  margin: auto;
+}
+
 .about__title {
   margin-top: 0;
   font-weight: 400;
@@ -10,12 +14,9 @@
 
 @media (min-width: $tablet-width) {
   .about {
+    margin: auto;
     margin-top: 43px;
     margin-bottom: 27px;
-  }
-
-  .about__wrapper {
-    margin: 0 3.9%;
   }
 
   .about__title {
@@ -28,6 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
+    margin: auto;
     max-width: 1300px;
   }
 }

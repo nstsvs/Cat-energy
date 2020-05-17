@@ -15,13 +15,21 @@
 
 @media (min-width: $tablet-width) {
   .about-list {
+    flex-wrap: wrap;
     justify-content: space-between;
     display: flex;
+  }
+
+  .about-list__item {
+    width: 37%;
+    margin-right: 8.8%;
+    position: relative;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-list {
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 

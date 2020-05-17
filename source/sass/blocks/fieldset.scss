@@ -114,3 +114,13 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .fieldset__legend {
+    width: auto;
+  }
+
+  .fieldset__textarea {
+    width: 505px;
+  }
+}
