@@ -3,7 +3,6 @@
 }
 
 .form__title {
-  padding-left: 20px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -12,7 +11,6 @@
 
 .form__text {
   width: 226px;
-  padding-left: 20px;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
@@ -23,7 +21,6 @@
 .form__button {
   display: flex;
   width: 280px;
-  margin-left: 20px;
   margin-bottom: 9px;
   padding-bottom: 9px;
   padding-left: 81px;
@@ -39,9 +36,8 @@
 }
 
 .form__required {
-  padding-left: 83px;
+  padding-left: 62px;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: normal;
   text-align: center;
@@ -49,15 +45,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    max-width: 630px;
+  }
+
   .form__title {
+    padding-top: 63px;
     font-size: 60px;
     line-height: 1;
   }
 
   .form__text {
+    padding-top: 26px;
     width: 323px;
     font-size: 20px;
     line-height: 1.5;
+  }
+
+  .form__fieldset {
+    padding-top: 39px;
   }
 
   .form__submit {
@@ -83,6 +89,7 @@
   }
 
   .form {
+    max-width: 1220px;
     flex-wrap: wrap;
     margin-top: 75px;
     margin-bottom: 82px;
@@ -102,7 +109,25 @@
     display: flex;
   }
 
+  .form__owner {
+    width: 1220px;
+  }
+
   .form__submit {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__button {
+    padding: 16px 208px;
+    width: 570px;
+    margin-top: 0;
+    margin-right: 40px;
+  }
+
+  .form__required {
+    margin-top: 16px;
+    margin-left: 40px;
+    padding: 0;
   }
 }

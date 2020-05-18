@@ -65,14 +65,14 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset fieldset">
-          <legend class="fieldset__legend">Контактные данные (владельца кота)</legend>
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
+        <fieldset class="form__fieldset form__owner fieldset">
+          <legend class="fieldset__legend fieldset__owner">Контактные данные (владельца кота)</legend>
+          <ul class="fieldset__list fieldset__list--owner">
+            <li class="fieldset__item fieldset__item--owner">
               <label class="fieldset__label fieldset__email" for="input-email">E-mail:*</label>
               <input class="fieldset__input" id="input-email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </li>
-            <li class="fieldset__item">
+            <li class="fieldset__item fieldset__item--owner">
               <label class="fieldset__label fieldset__tel" for="input-tel">Телефон:*</label>
               <input class="fieldset__input" id="input-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </li>
@@ -80,7 +80,7 @@
         </fieldset>
         <fieldset class="form__fieldset fieldset">
           <label class="fieldset__legend fieldset__comment">Комментарий</label>
-          <textarea class="fieldset__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="fieldset__textarea fieldset__textarea--owner" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset fieldset">
           <legend class="fieldset__legend fieldset__add">Дополнительно</legend>

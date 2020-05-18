@@ -7,7 +7,6 @@
   height: 270px;
   margin-top: 28px;
   margin-bottom: 5px;
-  margin-left: 20px;
 }
 
 .main__order {
@@ -15,7 +14,6 @@
   padding-right: 74px;
   padding-top: 8px;
   padding-bottom: 11px;
-  margin-left: 20px;
   font-weight: 400;
   line-height: 1.29;
   text-decoration: none;
@@ -33,26 +31,22 @@
 
 @media (min-width: $tablet-width) {
   .main__image {
-    left: 5%;
     position: relative;
     background: url("../img/index-can-tablet@1x.jpg") no-repeat;
     height: 609px;
-    width: 709px;
+    width: 708px;
     margin: 0;
     margin-top: -7px;
   }
 
   .main__order {
-    left: 3%;
+    left: 12%;
     position: relative;
     z-index: 1;
     top: -581px;
     display: block;
     width: 194px;
-    padding-left: 25px;
-    padding-right: 24px;
-    padding-top: 8px;
-    padding-bottom: 11px;
+    padding: 16px 28px;
     font-size: 20px;
     line-height: 1;
     background-color: #68b738;
@@ -69,12 +63,12 @@
 @media (min-width: $desktop-width) {
   .main__order {
     top: -500px;
-    left: 9%;
+    left: 5%;
   }
 
   .main__image {
     top: -259px;
-    left: 70%;
+    left: 33%;
     position: relative;
     background: url("../img/index-can-desktop@1x.png") no-repeat;
     height: 499px;
