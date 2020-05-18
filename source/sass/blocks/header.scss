@@ -11,14 +11,16 @@
     background: url("../img/logo-tablet.svg") no-repeat;
     width: 174px;
     height: 59px;
-    margin-right: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .header-index {
+  .header-index::before {
     content: "";
     background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    left: 47%;
+    position: absolute;
+    width: 715px;
     height: 696px;
     background-position: 100%;
     margin-bottom: 80px;

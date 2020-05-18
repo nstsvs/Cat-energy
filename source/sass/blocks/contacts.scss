@@ -5,6 +5,12 @@
   margin-bottom: -38px;
 }
 
+.contacts,
+.contacts__wrapper-form,
+.contacts__wrapper-catalog {
+  background-color: #f2f2f2;
+}
+
 .contacts__wrapper {
   justify-content: space-between;
   display: flex;
@@ -14,7 +20,6 @@
 .contacts__wrapper-catalog {
   justify-content: space-between;
   display: flex;
-  background-color: #f2f2f2;
 }
 
 .contacts__partners {
@@ -42,6 +47,7 @@
   background-position-y: -38px;
   height: 400px;
   width: 100%;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,6 +64,7 @@
   .contacts__wrapper-form,
   .contacts__wrapper,
   .contacts__wrapper-catalog {
+    max-width: 630px;
     justify-content: space-between;
   }
 
