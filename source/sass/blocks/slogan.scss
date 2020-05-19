@@ -1,7 +1,17 @@
 @import "global/variables.scss";
 
-.slogan {
+.slogan-test {
+  position: relative;
+}
+
+.slogan-test::before {
+  left: -7%;
+  z-index: -1;
+  content: "";
+  position: absolute;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  width: 320px;
+  height: 305px;
 }
 
 .slogan__title {
@@ -30,13 +40,18 @@
     background: none;
   }
 
+  .slogan-test::before {
+    display: none;
+  }
+
   .slogan-test {
     position: relative;
   }
 
   .slogan__title {
     width: 414px;
-    padding-left: 84px;
+    padding-left: 87px;
+    padding-top: 57px;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
@@ -45,7 +60,8 @@
   }
 
   .slogan__description {
-    padding-left: 84px;
+    padding-left: 89px;
+    margin-top: 42px;
     font-size: 20px;
     font-weight: 400;
     line-height: 1;
@@ -61,6 +77,10 @@
     display: block;
   }
 
+  .slogan-test::before {
+    display: none;
+  }
+
   .slogan-test {
     margin-bottom: -90px;
   }
@@ -68,14 +88,16 @@
   .slogan__title {
     position: relative;
     z-index: 1;
-    top: -12px;
-    padding-left: 67px;
+    top: 23px;
+    padding-top: 0;
+    padding-left: 77px;
   }
 
   .slogan__description {
     position: relative;
     z-index: 1;
-    top: -12px;
-    padding-left: 67px;
+    top: 22px;
+    padding-top: 0;
+    padding-left: 76px;
   }
 }

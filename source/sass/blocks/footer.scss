@@ -11,12 +11,14 @@
 }
 
 .footer__logo {
-  padding: 38px 0 27px;
+  padding: 36px 0 27px;
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
+    padding-bottom: 32px;
+    padding-top: 28px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -30,9 +32,10 @@
 @media (min-width: $desktop-width) {
   .footer__wrapper {
     flex-direction: row;
-    max-width: 1300px;
+    max-width: 1220px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding-top: 26px;
+    padding-bottom: 33px;
     align-items: center;
     display: flex;
     justify-content: space-between;

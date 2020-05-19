@@ -8,13 +8,17 @@
 
 @media (min-width: $tablet-width) {
   .catalog-list {
+    margin-top: 31px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .catalog-list__item {
-    margin-bottom: 58px;
+    box-sizing: border-box;
+    width: 324px;
+    margin-bottom: 80px;
+    padding-bottom: 49px;
   }
 }
 
@@ -24,7 +28,7 @@
   }
 
   .catalog-list__item {
-    width: 20.08%;
-    margin-bottom: 70px;
+    width: 245px;
+    margin-bottom: 41px;
   }
 }

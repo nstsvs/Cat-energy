@@ -6,7 +6,7 @@
   width: 280px;
   height: 270px;
   margin-top: 28px;
-  margin-bottom: 5px;
+  margin-bottom: 14px;
 }
 
 .main__order {
@@ -23,6 +23,7 @@
 }
 
 .main__catalog {
+  margin-bottom: 34px;
   font-weight: 400;
   line-height: 1.67;
   font-size: 36px;
@@ -36,23 +37,24 @@
     height: 609px;
     width: 708px;
     margin: 0;
-    margin-top: -7px;
+    margin-top: -1px;
   }
 
   .main__order {
-    left: 12%;
+    left: 12.5%;
     position: relative;
     z-index: 1;
     top: -581px;
     display: block;
-    width: 194px;
-    padding: 16px 28px;
+    width: 193px;
+    padding: 16px 26px;
     font-size: 20px;
     line-height: 1;
     background-color: #68b738;
   }
 
   .main__catalog {
+    padding-top: 55px;
     margin: auto;
     padding-bottom: 74px;
     font-size: 60px;
@@ -62,13 +64,14 @@
 
 @media (min-width: $desktop-width) {
   .main__order {
-    top: -500px;
-    left: 5%;
+    top: -444px;
+    left: 6.3%;
+    width: 191px;
   }
 
   .main__image {
     top: -259px;
-    left: 34%;
+    left: 36.6%;
     position: relative;
     background: url("../img/index-can-desktop@1x.png") no-repeat;
     height: 499px;
@@ -77,6 +80,8 @@
   }
 
   .main__catalog {
+    padding-top: 75px;
+    padding-bottom: 34px;
     font-size: 60px;
     line-height: 1;
   }

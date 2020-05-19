@@ -35,43 +35,55 @@
 @media (min-width: $tablet-width) {
   .pagination {
     border: solid 1px #cdcdcd;
-    height: 432px;
-    margin-top: 72px;
-    padding-left: 38px;
+    margin-top: 58px;
+    margin-bottom: 79px;
+    padding-left: 36px;
     padding-right: 37px;
     background: white;
   }
 
   .pagination__title {
+    width: 179px;
+    margin: auto;
+    padding-top: 162px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 1;
   }
 
   .pagination__description {
+    width: 228px;
+    padding-left: 11px;
+    margin-bottom: 97px;
     font-size: 16px;
     line-height: normal;
   }
 
   .pagination__button {
+    width: 249px;
     padding-left: 81px;
-    padding-right: 79px;
-    padding-top: 13px;
-    padding-bottom: 11px;
+    padding-right: 78px;
+    padding-top: 9px;
+    padding-bottom: 7px;
     line-height: 1.25;
   }
 }
 
 @media (min-width: $desktop-width) {
   .pagination {
-    height: 365px;
-    margin-top: 82px;
+    margin-top: 100px;
+    margin-bottom: 40px;
     padding: 0;
+  }
+
+  .pagination__description {
+    padding-left: 6px;
   }
 
   .pagination__button {
     padding-left: 41px;
     padding-right: 39px;
-    padding-top: 13px;
-    padding-bottom: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 }

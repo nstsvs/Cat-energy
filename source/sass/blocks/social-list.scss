@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .social-list {
   display: flex;
   padding: 0;
@@ -6,4 +8,10 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding-top: 0;
+  }
 }
