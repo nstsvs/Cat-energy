@@ -7,7 +7,7 @@
 .extra-products::before {
   content: "";
   top: 18px;
-  left: 0;
+  left: 53%;
   z-index: -1;
   position: relative;
   display: block;
@@ -18,8 +18,8 @@
 
 .extra-products__title {
   width: 245px;
-  margin-bottom: 48px;
-  margin: 0;
+  margin-bottom: 34px;
+  margin-top: 0;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -28,6 +28,7 @@
 }
 
 .extra-products__item {
+  padding-bottom: 19px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -40,7 +41,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 33px;
+  margin-bottom: 40px;
   list-style: none;
 }
 
