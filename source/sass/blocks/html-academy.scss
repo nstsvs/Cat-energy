@@ -10,3 +10,36 @@
   text-decoration: none;
   color: #444444;
 }
+
+.html-academy__text:active {
+  opacity: 0.3;
+}
+
+.html-academy__item:not(:last-child) {
+  margin-right: 125px;
+}
+
+.html-academy__logo:hover {
+  stroke: #68b738;
+  fill: #68b738;
+}
+
+.html-academy__logo:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .html-academy__item:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .html-academy__item {
+    padding-top: 3px;
+  }
+
+  .html-academy__item:not(:last-child) {
+    margin-right: 13px;
+  }
+}

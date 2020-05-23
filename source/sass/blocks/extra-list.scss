@@ -1,9 +1,10 @@
 .extra-list__wrapper {
-  margin-bottom: 14px;
+  margin-bottom: 23px;
 }
 
 .extra-list__title {
-  margin-top: 32px;
+  margin-top: 48px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
@@ -11,8 +12,12 @@
   color: #222222;
 }
 
+.extra-list__properties {
+  margin-bottom: -9px;
+}
+
 .extra-list__properties-text {
-  width: 236px;
+  width: 231px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -41,8 +46,18 @@
   color: #ffffff;
 }
 
+.extra-list__button:hover {
+  background-color: #5eaa2f;
+}
+
+.extra-list__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 @media (min-width: $tablet-width) {
   .extra-list__wrapper {
+    width: 100%;
+    margin-bottom: 24px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -56,41 +71,68 @@
   }
 
   .extra-list__title {
+    margin-top: 3px;
+    margin-bottom: 0;
     font-size: 20px;
     line-height: 1;
   }
 
+  .extra-list__properties {
+    width: 239px;
+  }
+
   .extra-list__properties-value {
+    width: 73px;
     font-size: 16px;
     line-height: 1.25;
+  }
+
+  .extra-list__button {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 276px;
+    padding-right: 294px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-list__wrapper {
-    width: 577px;
+    width: 617px;
+    margin-bottom: 20px;
+  }
+
+  .extra-list__title {
+    margin-top: 31px;
+    margin-bottom: 0;
   }
 
   .extra-list__properties {
-    width: 290px;
-    margin-left: 25px;
+    top: 5px;
+    position: relative;
+    width: 295px;
+    margin-left: 0;
   }
 
   .extra-list__properties-text {
     width: 244px;
-    text-align: right;
+    padding-right: 53px;
+    text-align: left;
   }
 
   .extra-list__properties-value {
-    width: 53px;
+    width: 79px;
+    text-transform: uppercase;
     text-align: right;
   }
 
   .extra-list__button {
     flex-grow: unset;
     width: 75px;
-    margin: -2px 0 0;
-    padding-left: 82px;
-    padding-right: 75px;
+    margin: 11px 0 0;
+    padding-left: 93px;
+    padding-right: 77px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }

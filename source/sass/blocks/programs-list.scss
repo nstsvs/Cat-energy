@@ -6,15 +6,18 @@
 }
 
 .programs-list__item {
-  margin-bottom: 24px;
+  position: relative;
+  margin-bottom: 20px;
   padding: 33px 20px 21px;
   list-style: none;
   background-color: #f2f2f2;
 }
 
 .programs-list__item-title {
+  position: relative;
   margin: 0;
   padding-bottom: 13px;
+  padding-left: 9px;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
@@ -23,8 +26,62 @@
   color: #111111;
 }
 
+.programs-list__item-title::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: auto;
+  left: 1px;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.programs-list__item-title::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  right: auto;
+  left: 2px;
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon-cat-slim.svg") center no-repeat;
+}
+
+.programs-list__item-title--pro {
+  padding-left: 37px;
+}
+
+.programs-list__item-title--pro::before {
+  top: -9px;
+  left: 1px;
+}
+
+.programs-list__item-title--pro::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  right: auto;
+  left: -8px;
+  width: 67px;
+  height: 50px;
+  background: url("../img/icon-cat-pro.svg") center no-repeat;
+}
+
+.programs-list__item-catalog:hover::after,
+.programs-list__item-catalog--pro:hover::after {
+  width: 34px;
+}
+
+.programs-list__item-catalog:active::after,
+.programs-list__item-catalog--pro:active::after {
+  opacity: 0.3;
+}
+
 .programs-list__item-description {
-  padding-bottom: 29px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d9d9d9;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.29;
@@ -32,9 +89,31 @@
 }
 
 .programs-list__item-catalog {
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
+}
+
+.programs-list__item-catalog:active {
+  opacity: 0.3;
+}
+
+.programs-list__item-catalog::after,
+.programs-list__item-catalog--pro::after {
+  content: "";
+  position: absolute;
+  top: 87%;
+  left: 41%;
+  width: 24px;
+  height: 11px;
+  background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+}
+
+.programs-list__item-catalog::after:hover,
+.programs-list__item-catalog--pro::after:hover {
+  width: 134px;
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet-width) {
@@ -47,26 +126,86 @@
   }
 
   .programs-list__item {
-    margin-bottom: 34px;
+    position: relative;
+    margin-bottom: 30px;
     padding: 76px 53px 61px;
   }
 
   .programs-list__item-title {
+    position: relative;
     padding-bottom: 9px;
+    padding-left: 0;
     font-size: 36px;
     line-height: 1.03;
     text-align: left;
     color: #111111;
   }
 
+  .programs-list__item-title--pro {
+    padding-left: 0;
+  }
+
+  .programs-list__item-title::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: auto;
+    left: 65%;
+    width: 200px;
+    height: 200px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .programs-list__item-title::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: auto;
+    left: 70%;
+    width: 141px;
+    height: 194px;
+    background: url("../img/icon-cat-slim.svg") center no-repeat;
+  }
+
+  .programs-list__item-title--pro::after {
+    content: "";
+    position: absolute;
+    top: 57px;
+    right: auto;
+    left: 59%;
+    width: 268px;
+    height: 113px;
+    background: url("../img/icon-cat-pro.svg") center no-repeat;
+  }
+
   .programs-list__item-description {
-    margin-right: 43%;
+    margin-right: 38%;
     padding-bottom: 40px;
     font-family: "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+  }
+
+  .programs-list__item-description--pro {
+    margin-right: 43%;
+  }
+
+  .programs-list__item-catalog::after,
+  .programs-list__item-catalog--pro::after {
+    content: "";
+    position: absolute;
+    top: 79%;
+    left: 26%;
+    width: 24px;
+    height: 11px;
+    background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+  }
+
+  .programs-list__item-catalog--pro::after {
+    left: 25%;
   }
 
   .programs-list__item-catalog {
@@ -94,10 +233,45 @@
   }
 
   .programs-list__item-title {
+    position: relative;
     padding-left: 23px;
     text-align: center;
     font-size: 36px;
     line-height: 1.03;
+  }
+
+  .programs-list__item-title::before {
+    content: "";
+    position: absolute;
+    top: -29px;
+    right: auto;
+    left: -4px;
+    width: 100px;
+    height: 100px;
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+
+  .programs-list__item-title::after {
+    content: "";
+    position: absolute;
+    top: -35px;
+    right: auto;
+    left: 5px;
+    width: 80px;
+    height: 97px;
+    background: url("../img/icon-cat-slim.svg") center no-repeat;
+  }
+
+  .programs-list__item-title--pro::after {
+    content: "";
+    position: absolute;
+    top: -28px;
+    right: auto;
+    left: -23px;
+    width: 134px;
+    height: 97px;
+    background: url("../img/icon-cat-pro.svg") center no-repeat;
   }
 
   .programs-list__item-description {
@@ -106,5 +280,28 @@
     width: 462px;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .programs-list__item-catalog::after,
+  .programs-list__item-catalog--pro::after {
+    content: "";
+    position: absolute;
+    top: 79%;
+    left: 32%;
+    width: 24px;
+    height: 12px;
+    background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+  }
+
+  .programs-list__item-catalog--pro::after {
+    left: 31%;
+  }
+
+  .programs-list__item--pro {
+    padding: 74px 55px 62px;
+  }
+
+  .programs-list__item-title--pro {
+    padding-left: 57px;
   }
 }

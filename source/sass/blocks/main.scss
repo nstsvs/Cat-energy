@@ -1,5 +1,9 @@
 @import "global/variables.scss";
 
+.main {
+  overflow-x: hidden;
+}
+
 .main__image {
   position: relative;
   background: url("../img/index-can-mobile@1x.png") no-repeat;
@@ -22,12 +26,21 @@
   background-color: #68b738;
 }
 
+.main__order:hover {
+  background-color: #5eaa2f;
+}
+
+.main__order:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main__catalog {
   margin-bottom: 34px;
   font-weight: 400;
   line-height: 1.67;
   font-size: 36px;
   color: #111111;
+  border-top: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
@@ -59,6 +72,7 @@
     padding-bottom: 74px;
     font-size: 60px;
     line-height: 1;
+    border: none;
   }
 }
 
@@ -84,5 +98,6 @@
     padding-bottom: 34px;
     font-size: 60px;
     line-height: 1;
+    border: none;
   }
 }

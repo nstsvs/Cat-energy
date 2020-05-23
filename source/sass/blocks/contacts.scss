@@ -2,15 +2,16 @@
 
 .contacts {
   position: relative;
+  background-color: #ffffff;
 }
 
-.contacts,
-.contacts__wrapper-form,
-.contacts__wrapper-catalog {
+.contacts__form,
+.contacts__catalog {
   background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
+  padding-bottom: 24px;
   justify-content: space-between;
   display: flex;
 }
@@ -43,16 +44,17 @@
 
 .contacts__map {
   background: url("../img/map-mobile.png") no-repeat;
-  background-position-y: -38px;
-  height: 400px;
+  height: 370px;
   width: 100%;
   background-size: cover;
+  background-position-y: -30px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 0;
     position: relative;
+    background-color: #ffffff;
   }
 
   .contacts__catalog,
@@ -64,6 +66,8 @@
   .contacts__wrapper,
   .contacts__wrapper-catalog {
     max-width: 630px;
+    padding-top: 65px;
+    padding-bottom: 58px;
     justify-content: space-between;
   }
 
@@ -98,9 +102,9 @@
   .contacts__wrapper {
     position: absolute;
     top: 95px;
-    left: 40px;
+    left: 46px;
     width: 570px;
-    padding: 69px 90px 62px 76px;
+    padding: 65px 90px 61px 76px;
     box-sizing: border-box;
     background-color: #ffffff;
     justify-content: space-between;

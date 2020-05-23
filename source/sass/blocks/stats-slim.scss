@@ -4,27 +4,40 @@
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
 .stats-slim__value {
   margin: 0;
   margin-top: 15px;
-  font-size: 24px;
+  position: relative;
+  width: 122px;
+  height: 41px;
+  padding: 13px 0 0;
   font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald","Arial",sans-serif;
   text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
   color: #111111;
 }
 
 .stats-slim__text {
-  width: 54px;
-  font-family: "Arial", sans-serif;
+  position: relative;
+  top: -10px;
+  display: block;
+  width: 81px;
+  margin: 0 auto;
+  padding: 0 5px;
   font-size: 12px;
-  font-weight: 400;
-  line-height: 1;
+  line-height: 12px;
+  font-family: "Arial",sans-serif;
+  text-transform: lowercase;
+  background-color: #f2f2f2;
   text-align: center;
   color: #444444;
 }
@@ -44,39 +57,52 @@
   }
 
   .stats-slim__item:not(:last-child) {
-    margin-right: 36px;
+    margin-right: 43px;
   }
 
   .stats-slim__value {
+    padding-top: 15px;
+    width: 158px;
+    padding-bottom: 13px;
     font-size: 30px;
     line-height: 1.23;
   }
 
   .stats-slim__text {
+    width: 127px;
     font-size: 14px;
+    background-color: #ffffff;
   }
 
   .stats-slim__description {
     display: inline-flex;
     margin: 0;
+    padding-top: 25px;
+    width: 195px;
+    text-align: right;
     font-size: 20px;
     line-height: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .stats-slim__list {
-    padding-left: 110px;
-  }
-
   .stats-slim__description {
     z-index: 0;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 23px;
     margin-bottom: 5px;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 0;
+  }
+
+  .stats-slim__text {
+    background-color: #f2f2f2;
+  }
+
+  .stats-slim__value {
+    margin-top: 0;
+    height: 42px;
   }
 }
