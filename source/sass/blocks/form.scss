@@ -1,9 +1,12 @@
+@import "global/variables.scss";
+
 .form {
   padding-bottom: 33px;
 }
 
-.form__title {
+.form-title {
   margin-bottom: 25px;
+  margin-top: 14px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -36,6 +39,14 @@
   text-align: center;
   background-color: #68b738;
   color: #ffffff;
+}
+
+.form__button:hover {
+  background-color: #5eaa2f;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__required {
@@ -78,14 +89,17 @@
     padding-bottom: 0;
   }
 
-  .form__title {
-    padding-top: 63px;
+  .form-title {
+    padding-top: 57px;
+    margin-top: 0;
+    margin-bottom: 29px;
     font-size: 60px;
     line-height: 1;
   }
 
   .form__text {
     padding-top: 26px;
+    margin-bottom: 67px;
     width: 323px;
     font-size: 20px;
     line-height: 1.5;
@@ -100,36 +114,40 @@
   }
 
   .form__button {
+    width: 285px;
     padding: 16px 60px;
+    margin-top: 0;
+    margin-bottom: 71px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .form__required {
+    padding-top: 16px;
     font-size: 16px;
     line-height: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .form__title {
-    margin: 75px auto 55px;
-    padding: 0 40px;
+  .form-title {
+    margin: 74px auto 47px;
+    padding: 0;
   }
 
   .form {
     max-width: 1220px;
     flex-wrap: wrap;
-    margin-top: 75px;
+    margin-top: 56px;
     padding-bottom: 0;
-    margin-bottom: 82px;
+    margin-bottom: 11px;
     justify-content: space-between;
     display: flex;
   }
 
   .form__text {
     width: 29%;
-    margin: 0 auto 52px;
+    margin: 0 auto 66px;
     padding: 0 883px 0 0;
   }
 
@@ -149,8 +167,8 @@
   }
 
   .form__button {
-    padding: 16px 208px;
-    width: 570px;
+    padding: 16px 207px;
+    width: 568px;
     margin-top: 0;
     margin-right: 40px;
   }

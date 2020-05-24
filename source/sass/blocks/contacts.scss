@@ -35,8 +35,9 @@
   text-align: left;
 }
 
-.contacts__adress {
-  width: 135px;
+.contacts__adress,
+.contacts__spb {
+  width: 140px;
   margin: 0;
   font-family: "Arial", sans-serif;
   line-height: 1.43;
@@ -79,6 +80,11 @@
   }
 
   .contacts__adress {
+    padding-bottom: 19px;
+  }
+
+  .contacts__adress,
+  .contacts__spb {
     width: 155px;
     text-align: right;
     font-size: 16px;
@@ -103,16 +109,17 @@
   .contacts__wrapper-catalog,
   .contacts__wrapper {
     position: absolute;
-    top: 95px;
-    left: 46px;
+    top: 93px;
+    left: 50px;
     width: 570px;
-    padding: 65px 90px 61px 76px;
+    padding: 65px 88px 57px 76px;
     box-sizing: border-box;
     background-color: #ffffff;
     justify-content: space-between;
   }
 
-  .contacts__adress {
+  .contacts__adress,
+  .contacts__spb {
     text-align: left;
   }
 

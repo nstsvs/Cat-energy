@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .product-list__item {
-  margin-bottom: 41px;
+  margin-bottom: 39px;
 }
 
 .product-list__img {
@@ -144,6 +144,7 @@
   }
 
   .product-list__item {
+    margin-bottom: 41px;
     position: relative;
     background: linear-gradient(to bottom, #ffffff 12%, #f2f2f2 10%);
   }
@@ -195,13 +196,13 @@
   .product-list__wrap {
     width: 245px;
     display: flex;
-    padding-bottom: 33px;
+    padding-bottom: 30px;
     align-items: center;
   }
 
   .product-list__desc {
-    width: 236px;
-    padding-bottom: 14px;
+    width: 242px;
+    padding-bottom: 13px;
   }
 
   .product-list__line {
@@ -210,7 +211,7 @@
 
   .product-list__line {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
   }
 
   .product-list__line:not(:first-child) {
@@ -223,5 +224,9 @@
 
   .product-list__value {
     text-align: right;
+  }
+
+  .product-list__img {
+    top: 0;
   }
 }

@@ -36,7 +36,7 @@
 @media (min-width: $tablet-width) {
   .social-list {
     width: auto;
-    padding-top: 0;
+    padding-top: 24px;
     padding-left: 21px;
     border: none;
   }
@@ -67,7 +67,8 @@
 @media (min-width:$desktop-width) {
   .social-list {
     width: auto;
-    padding-left: 18px;
+    padding-left: 10px;
+    padding-top: 25px;
     border: none;
   }
 

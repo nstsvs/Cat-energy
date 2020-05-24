@@ -69,11 +69,6 @@
   background: url("../img/icon-cat-pro.svg") center no-repeat;
 }
 
-.programs-list__item-catalog:hover::after,
-.programs-list__item-catalog--pro:hover::after {
-  width: 34px;
-}
-
 .programs-list__item-catalog:active::after,
 .programs-list__item-catalog--pro:active::after {
   opacity: 0.3;

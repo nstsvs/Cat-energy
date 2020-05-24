@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .extra-list__wrapper {
   margin-bottom: 22px;
 }
@@ -17,6 +19,7 @@
 }
 
 .extra-list__properties-text {
+  padding-right: 0;
   width: 231px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -25,6 +28,7 @@
 }
 
 .extra-list__properties-value {
+  text-transform: uppercase;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -64,7 +68,7 @@
   }
 
   .extra-list__properties-text {
-    padding-right: 52px;
+    padding-right: 39px;
     text-align: right;
     font-size: 16px;
     line-height: 1.25;
@@ -104,8 +108,8 @@
   }
 
   .extra-list__title {
-    margin-top: 31px;
-    margin-bottom: 0;
+    margin-top: 27px;
+    margin-bottom: 4px;
   }
 
   .extra-list__properties {
@@ -122,15 +126,15 @@
   }
 
   .extra-list__properties-value {
-    width: 79px;
+    width: 54px;
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
   }
 
   .extra-list__button {
     flex-grow: unset;
     width: 75px;
-    margin: 11px 0 0;
+    margin: -1px 0 0;
     padding-left: 93px;
     padding-right: 77px;
     padding-top: 10px;

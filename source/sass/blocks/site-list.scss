@@ -5,6 +5,7 @@
   padding-left: 0;
   display: block;
   list-style: none;
+  display: none;
 }
 
 .site-list__title {
@@ -82,7 +83,7 @@
   }
 
   .site-list__title {
-    padding-top: 0;
+    padding-top: 10px;
     font-size: 20px;
   }
 

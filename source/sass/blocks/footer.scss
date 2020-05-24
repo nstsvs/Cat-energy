@@ -35,6 +35,10 @@
     flex-direction: row;
   }
 
+  .footer__logo {
+    padding: 46px 0 29px
+  }
+
   .footer__logo-image {
     padding-left: 0;
   }
@@ -45,10 +49,14 @@
     flex-direction: row;
     max-width: 1220px;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 22px;
+    padding-top: 14px;
+    padding-bottom: 29px;
     align-items: center;
     display: flex;
     justify-content: space-between;
+  }
+
+  .footer__logo {
+    padding: 48px 0 29px;
   }
 }

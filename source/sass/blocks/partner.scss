@@ -1,3 +1,5 @@
+@import "global/variables.scss";
+
 .partner {
   display: flex;
   margin: 0;
@@ -9,13 +11,14 @@
 
 @media (min-width: $tablet-width) {
   .partner {
-    padding-top: 38px;
+    padding-top: 29px;
     align-items: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .partner {
+    padding-top: 31px;
     display: flex;
     align-items: center;
   }
