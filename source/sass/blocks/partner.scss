@@ -1,12 +1,22 @@
 .partner {
+  display: flex;
   margin: 0;
-  padding-top: 41px;
-  padding-left: 20px;
-  padding-bottom: 31px;
+  padding-top: 17px;
+  padding-left: 0;
+  padding-bottom: 18px;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {
   .partner {
-    padding-left: 0;
+    padding-top: 38px;
+    align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partner {
+    display: flex;
+    align-items: center;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .example-cat__title {
-  padding-top: 22px;
+  padding-top: 17px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -13,8 +13,10 @@
 }
 
 .example-cat__text {
+  width: 279px;
   margin: 0;
   padding-top: 22px;
+  padding-bottom: 10px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -24,12 +26,15 @@
 
 @media (min-width: $tablet-width) {
   .example-cat {
-    background: linear-gradient(to bottom, #ffffff 47%, #f2f2f2 25%);
+    padding-bottom: 26px;
+    background: linear-gradient(to bottom, #ffffff 55%, #f2f2f2 55%);
     background-color: #ffffff;
   }
 
   .example-cat__title {
     margin: auto;
+    padding-bottom: 42px;
+    padding-top: 0;
     padding-left: 0;
     font-size: 60px;
     line-height: 1;
@@ -37,12 +42,14 @@
 
   .example-cat__text {
     padding-left: 0;
-    width: auto;
+    padding-bottom: 37px;
+    width: 676px;
     font-size: 16px;
     line-height: 1.5;
   }
 
   .example-cat__stats {
+    display: flex;
     margin-bottom: 246px;
   }
 }
@@ -50,7 +57,7 @@
 @media (min-width: $desktop-width) {
   .example-cat {
     width: 100%;
-    background: linear-gradient(to bottom, #ffffff 19%, #f2f2f2 0%);
+    background: linear-gradient(to bottom, #ffffff 23%, #f2f2f2 22%);
   }
 
   .example-cat__wrap {
@@ -60,7 +67,7 @@
 
   .text-cat {
     flex-direction: column;
-    width: 43.84%;
+    width: 46.84%;
   }
 
   .example-cat__stats {
@@ -69,13 +76,14 @@
 
   .example-cat__title {
     padding-left: 0;
+    padding-bottom: 0;
     margin: auto;
   }
 
   .example-cat__text {
     padding-left: 0;
-    padding-top: 76px;
-    padding-bottom: 71px;
+    padding-top: 147px;
+    padding-bottom: 68px;
     width: 431px;
   }
 }
