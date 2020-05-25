@@ -22,7 +22,6 @@
   }
 
   .catalog-list__item {
-    box-sizing: border-box;
     width: 324px;
     margin-bottom: 80px;
     padding-bottom: 49px;
@@ -35,10 +34,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog-list {
-    flex-direction: row;
-  }
-
   .catalog-list__item {
     width: 245px;
     margin-bottom: 41px;

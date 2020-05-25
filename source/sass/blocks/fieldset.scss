@@ -8,9 +8,13 @@
   display: flex;
 }
 
+.fieldset__owner-data {
+  margin-bottom: 30px;
+}
+
 .fieldset__checklist {
   border-bottom: 1px solid #ededed;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
 }
 
 .fieldset__options {
@@ -23,6 +27,8 @@
 }
 
 .fieldset__owner {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 9px;
 }
 
@@ -80,6 +86,10 @@
 }
 
 .fieldset__input {
+  height: 45px;
+  box-shadow: inset 0 0 0 1px rgba(230, 230, 230, 0.5);
+  outline: 0;
+  border: 0;
   flex-grow: 1;
   min-height: 39px;
   padding-left: 14px;
@@ -113,6 +123,8 @@
 }
 
 .fieldset__comment {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 28px;
 }
 
@@ -152,6 +164,8 @@
 }
 
 .fieldset__add {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 39px;
 }
 
@@ -160,7 +174,7 @@
 }
 
 .fieldset__item-profile:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .fieldset__radio-item:not(:last-child) {
@@ -232,27 +246,8 @@
   height: 17px;
 }
 
-.fieldset__email::before {
-  left: 89%;
-  content: "";
-  position: absolute;
-  background: url("../img/icon-mail.svg") no-repeat;
-  width: 18px;
-  height: 14px;
-}
-
-.fieldset__tel::before {
-  left: 89%;
-  top: 27%;
-  content: "";
-  position: absolute;
-  background: url("../img/icon-phone.svg") no-repeat;
-  width: 21px;
-  height: 21px;
-}
-
 .fieldset__item--owner {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .fieldset__owner::after,
@@ -262,13 +257,36 @@
 }
 
 .fieldset__name {
-  padding-right: inherit;
+  padding-right: 14px;
 }
 
-.fieldset__input {
-  box-shadow: inset 0 0 0 1px rgba(230, 230, 230, 0.5);
-  outline: 0;
-  border: 0;
+.fieldset__input-mail,
+.fieldset__input-tel {
+  position: relative;
+}
+
+.fieldset__input-mail:focus ~ .mail-svg {
+  fill: #68b738;
+}
+
+.fieldset__input-tel:focus ~ .tel-svg {
+  fill: #68b738;
+}
+
+.mail-svg,
+.tel-svg {
+  fill: #222222;
+  position: absolute;
+}
+
+.mail-svg {
+  right: 5%;
+  top: 35%;
+}
+
+.tel-svg {
+  right: 4%;
+  top: 29%;
 }
 
 .fieldset__input:hover {
@@ -276,11 +294,11 @@
 }
 
 .fieldset__input:active {
-  box-shadow: inset 0 0 0 2px #444;
+  box-shadow: inset 0 0 0 2px #444444;
 }
 
 .fieldset__input:focus {
-  box-shadow: inset 0 0 0 2px #444;
+  box-shadow: inset 0 0 0 2px #444444;
 }
 
 @media (min-width: $tablet-width) {
@@ -291,6 +309,10 @@
     color: #222222;
   }
 
+  .fieldset__label-radio {
+    padding-left: 42px;
+  }
+
   .fieldset__input {
     min-height: 44px;
     padding-left: 16px;
@@ -299,7 +321,7 @@
   }
 
   .fieldset__item-profile:not(:last-child) {
-    margin-bottom: 21px;
+    margin-bottom: 25px;
   }
 
   .fieldset__weight,
@@ -319,19 +341,20 @@
 
   .fieldset__label-radio::before {
     top: -11px;
-    left: -14px;
+    left: -18px;
     width: 40px;
     height: 40px;
   }
 
   .fieldset__radio:checked ~ .fieldset__label-radio::after {
     top: 1px;
-    left: -2px;
+    left: -6px;
     width: 18px;
     height: 18px;
   }
 
   .fieldset__checklist {
+    flex-direction: column;
     padding-bottom: 31px;
     border-bottom: none;
   }
@@ -359,22 +382,12 @@
     background-image: linear-gradient(90deg, #68b738 70px, #68b738 400px);
   }
 
-  .fieldset__email::before {
-    top: 35%;
-    left: 95%;
-  }
-
-  .fieldset__tel::before {
-    left: 95%;
-    top: 31%;
-  }
-
   .fieldset__tel {
     padding-right: 17px;
   }
 
   .fieldset__item--owner {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
   }
 
   .fieldset__owner {
@@ -392,7 +405,7 @@
 
   .fieldset__comment::after {
     content: "";
-    top: -266px;
+    top: -263px;
     left: -106%;
     z-index: -1;
     position: relative;
@@ -403,7 +416,7 @@
   }
 
   .fieldset__comment-title {
-    padding-bottom: 43px;
+    padding-bottom: 0;
   }
 
   .fieldset__comment {
@@ -493,13 +506,17 @@
   }
 
   .fieldset__name {
-    padding-right: inherit;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .fieldset__owner {
     width: 100%;
+  }
+
+  .fieldset__input {
+    min-height: 46px;
   }
 
   .fieldset__list--owner {
@@ -510,6 +527,7 @@
   .fieldset__item--owner {
     width: 100%;
     margin-right: 78px;
+    margin-bottom: 21px;
   }
 
   .fieldset__item--owner:last-child {
@@ -566,21 +584,17 @@
     left: -103%;
   }
 
-  .fieldset__email::before,
-  .fieldset__tel::before {
-    left: 93%;
-  }
-
   .fieldset__comment::before {
     left: 18%;
   }
 
   .fieldset__comment::after {
-    top: -307px;
+    top: -263px;
     left: -103%;
   }
 
   .fieldset__add {
+    width: 100%;
     margin-bottom: 3px;
   }
 
@@ -588,21 +602,13 @@
     left: 21%;
   }
 
-  .fieldset__add::after  {
+  .fieldset__add::after {
     top: -88%;
     left: -103%;
   }
 
-  .fieldset__add {
-    width: 100%;
-  }
-
   .fieldset__list-checkbox {
     padding-right: 0;
-  }
-
-  .fieldset__item-checkbox:not(:last-child) {
-    margin-right: 104px;
   }
 
   .fieldset__item-checkbox:not(:last-child) {
@@ -626,5 +632,13 @@
     background: url("../img/icon-phone-active.svg") no-repeat;
     width: 21px;
     height: 21px;
+  }
+
+  .mail-svg {
+    right: 4%;
+  }
+
+  .tel-svg {
+    right: 3%;
   }
 }

@@ -18,11 +18,14 @@
 }
 
 .html-academy__item:not(:last-child) {
-  margin-right: 125px;
+  margin-right: 124px;
+}
+
+.html-academy__logo {
+  fill: #666666;
 }
 
 .html-academy__logo:hover {
-  stroke: #68b738;
   fill: #68b738;
 }
 

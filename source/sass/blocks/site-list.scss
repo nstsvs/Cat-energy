@@ -5,7 +5,6 @@
   padding-left: 0;
   display: block;
   list-style: none;
-  display: none;
 }
 
 .site-list__title {
@@ -88,7 +87,7 @@
   }
 
   .site-list__item--active-index {
-    padding-bottom: 9px;
+    padding-bottom: 11px;
     border-bottom: 2px solid #ffffff;
   }
 

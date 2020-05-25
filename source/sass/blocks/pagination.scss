@@ -23,7 +23,7 @@
   left: 45%;
   width: 31px;
   height: 31px;
-  background-image: url(../img/icon-plus.svg);
+  background-image: url("../img/icon-plus.svg");
   opacity: 0.2;
   cursor: pointer;
 }
@@ -85,7 +85,7 @@
     left: 34%;
     width: 60px;
     height: 60px;
-    background-image: url(../img/icon-plus.svg);
+    background-image: url("../img/icon-plus.svg");
     opacity: 0.2;
   }
 
@@ -122,13 +122,12 @@
     left: 34%;
     width: 60px;
     height: 60px;
-    background-image: url(../img/icon-plus.svg);
+    background-image: url("../img/icon-plus.svg");
     opacity: 0.2;
   }
 
   .pagination__title {
-    margin-top: 103px;
-    margin: auto;
+    margin-top: 0;
   }
 
   .pagination__description {

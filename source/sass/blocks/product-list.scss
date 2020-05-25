@@ -31,6 +31,7 @@
 }
 
 .product-list__value {
+  width: 100%;
   text-align: right;
 }
 
@@ -69,10 +70,6 @@
   position: relative;
   width: 100%;
   display: flex;
-}
-
-.product-list__value {
-  width: 100%;
 }
 
 .product-list__wrap {
@@ -202,14 +199,11 @@
 
   .product-list__desc {
     width: 242px;
-    padding-bottom: 13px;
+    padding-bottom: 14px;
   }
 
   .product-list__line {
     justify-content: space-between;
-  }
-
-  .product-list__line {
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 7px;
   }

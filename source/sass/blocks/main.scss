@@ -13,6 +13,14 @@
   margin-bottom: 14px;
 }
 
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .main__image {
+    background: url("../img/index-can-mobile@2x.png") no-repeat;
+    background-size: 280px 270px;
+  }
+}
+
 .main__order {
   padding-left: 72px;
   padding-right: 74px;
@@ -47,7 +55,8 @@
 @media (min-width: $tablet-width) {
   .main__image {
     position: relative;
-    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    background: url("../img/index-can-tablet@2x.jpg") no-repeat;
+    background-size: 709px 609px;
     height: 609px;
     width: 708px;
     margin: 0;
@@ -81,14 +90,15 @@
   .main__order {
     top: -444px;
     left: 6.3%;
-    width: 191px;
+    width: 192px;
   }
 
   .main__image {
     top: -259px;
     left: 36.6%;
     position: relative;
-    background: url("../img/index-can-desktop@1x.png") no-repeat;
+    background: url("../img/index-can-desktop@2x.png") no-repeat;
+    background-size: 552px 499px;
     height: 499px;
     width: 552px;
     margin: 0;

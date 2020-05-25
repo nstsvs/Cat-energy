@@ -5,8 +5,9 @@
 }
 
 .form-title {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 14px;
   margin-bottom: 25px;
-  margin-top: 14px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -90,6 +91,7 @@
   }
 
   .form-title {
+    border-top: 0;
     padding-top: 57px;
     margin-top: 0;
     margin-bottom: 29px;
@@ -133,6 +135,7 @@
   .form-title {
     margin: 74px auto 47px;
     padding: 0;
+    border-top: 0;
   }
 
   .form {

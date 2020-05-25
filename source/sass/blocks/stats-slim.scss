@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald","Arial",sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
@@ -37,7 +37,7 @@
   padding: 0 5px;
   font-size: 12px;
   line-height: 12px;
-  font-family: "Arial",sans-serif;
+  font-family: "Arial", sans-serif;
   text-transform: lowercase;
   background-color: #f2f2f2;
   text-align: center;
@@ -63,6 +63,7 @@
     display: block;
     padding-left: 0;
   }
+
   .stats-slim__list {
     display: inline-flex;
     margin-right: 169px;
@@ -98,7 +99,7 @@
 
   .stats-slim__description {
     width: 174px;
-    padding-top: 26px;
+    padding-top: 21px;
   }
 
   .stats-slim__cost {
@@ -128,6 +129,10 @@
     margin-bottom: 5px;
     text-align: left;
     padding-left: 0;
+  }
+
+  .stats-slim__description {
+    padding-top: 26px;
   }
 
   .stats-slim__cost {
