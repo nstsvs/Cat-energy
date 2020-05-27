@@ -1,14 +1,14 @@
 @import "global/variables.scss";
 
 .programs-list {
-  padding-top: 33px;
+  padding-top: 34px;
   padding-left: 0;
 }
 
 .programs-list__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 33px 20px 21px;
+  padding: 30px 20px 21px;
   list-style: none;
   background-color: #f2f2f2;
 }
@@ -16,8 +16,8 @@
 .programs-list__item-title {
   position: relative;
   margin: 0;
-  padding-bottom: 13px;
-  padding-left: 9px;
+  padding-bottom: 16px;
+  padding-left: 11px;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
@@ -29,9 +29,9 @@
 .programs-list__item-title::before {
   content: "";
   position: absolute;
-  top: -7px;
+  top: -6px;
   right: auto;
-  left: 1px;
+  left: 2px;
   width: 50px;
   height: 50px;
   background-color: #68b738;
@@ -41,7 +41,7 @@
 .programs-list__item-title::after {
   content: "";
   position: absolute;
-  top: -11px;
+  top: -9px;
   right: auto;
   left: 2px;
   width: 50px;
@@ -50,20 +50,20 @@
 }
 
 .programs-list__item-title--pro {
-  padding-left: 37px;
+  padding-left: 39px;
 }
 
 .programs-list__item-title--pro::before {
-  top: -9px;
-  left: 1px;
+  top: -6px;
+  left: 2px;
 }
 
 .programs-list__item-title--pro::after {
   content: "";
   position: absolute;
-  top: -9px;
+  top: -6px;
   right: auto;
-  left: -8px;
+  left: -7px;
   width: 67px;
   height: 50px;
   background: url("../img/icon-cat-pro.svg") center no-repeat;
@@ -75,7 +75,8 @@
 }
 
 .programs-list__item-description {
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
   border-bottom: 1px solid #d9d9d9;
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -99,10 +100,14 @@
   content: "";
   position: absolute;
   top: 87%;
-  left: 41%;
+  left: 42%;
   width: 24px;
   height: 11px;
   background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+}
+
+.programs-list__item-catalog--pro::after {
+  left: 41%;
 }
 
 .programs-list__item-catalog::after:hover,
@@ -121,7 +126,7 @@
 
   .programs-list__item {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding: 76px 53px 61px;
   }
 
@@ -142,9 +147,9 @@
   .programs-list__item-title::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 16px;
     right: auto;
-    left: 65%;
+    left: 393px;
     width: 200px;
     height: 200px;
     background-color: #68b738;
@@ -154,20 +159,25 @@
   .programs-list__item-title::after {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: auto;
-    left: 70%;
+    left: 422px;
     width: 141px;
     height: 194px;
     background: url("../img/icon-cat-slim.svg") center no-repeat;
   }
 
+  .programs-list__item-title--pro::before {
+    top: 15px;
+    left: 395px;
+  }
+
   .programs-list__item-title--pro::after {
     content: "";
     position: absolute;
-    top: 57px;
+    top: 58px;
     right: auto;
-    left: 59%;
+    left: 359px;
     width: 268px;
     height: 113px;
     background: url("../img/icon-cat-pro.svg") center no-repeat;
@@ -175,12 +185,14 @@
 
   .programs-list__item-description {
     margin-right: 38%;
-    padding-bottom: 40px;
+    margin-bottom: 0;
+    padding-bottom: 55px;
     font-family: "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+    border-bottom: 0;
   }
 
   .programs-list__item-description--pro {
@@ -191,7 +203,7 @@
   .programs-list__item-catalog--pro::after {
     content: "";
     position: absolute;
-    top: 79%;
+    top: 295px;
     left: 26%;
     width: 24px;
     height: 11px;
@@ -223,7 +235,7 @@
   }
 
   .programs-list__item {
-    padding: 74px 52px 62px;
+    padding: 74px 51px 62px;
   }
 
   .programs-list__item-title {
@@ -237,9 +249,9 @@
   .programs-list__item-title::before {
     content: "";
     position: absolute;
-    top: -29px;
+    top: -28px;
     right: auto;
-    left: -4px;
+    left: -2px;
     width: 100px;
     height: 100px;
     background-color: #68b738;
@@ -249,20 +261,22 @@
   .programs-list__item-title::after {
     content: "";
     position: absolute;
-    top: -35px;
-    right: auto;
-    left: 5px;
+    top: -34px;
+    left: 7px;
     width: 80px;
     height: 97px;
     background: url("../img/icon-cat-slim.svg") center no-repeat;
   }
 
+  .programs-list__item-title--pro::before {
+    left: -3px;
+  }
+
   .programs-list__item-title--pro::after {
     content: "";
     position: absolute;
-    top: -28px;
-    right: auto;
-    left: -23px;
+    top: -27px;
+    left: -21px;
     width: 134px;
     height: 97px;
     background: url("../img/icon-cat-pro.svg") center no-repeat;
@@ -270,17 +284,19 @@
 
   .programs-list__item-description {
     padding-top: 50px;
-    padding-bottom: 14px;
+    padding-bottom: 31px;
+    margin-bottom: 0;
     width: 462px;
     font-size: 16px;
     line-height: 1.5;
+    border-bottom: 0;
   }
 
   .programs-list__item-catalog::after,
   .programs-list__item-catalog--pro::after {
     content: "";
     position: absolute;
-    top: 79%;
+    top: 292px;
     left: 32%;
     width: 24px;
     height: 12px;
@@ -288,14 +304,15 @@
   }
 
   .programs-list__item-catalog--pro::after {
-    left: 31%;
+    left: 178px;
+    top: 293px;
   }
 
   .programs-list__item--pro {
-    padding: 74px 55px 62px;
+    padding: 74px 56px 62px;
   }
 
   .programs-list__item-title--pro {
-    padding-left: 57px;
+    padding-left: 60px;
   }
 }

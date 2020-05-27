@@ -46,7 +46,7 @@
 
 .stats-slim__wrap {
   display: flex;
-  padding-left: 48px;
+  padding-left: 47px;
 }
 
 .stats-slim__description,
@@ -56,6 +56,10 @@
   line-height: 1.43;
   text-align: center;
   color: #111111;
+}
+
+.stats-slim__description {
+  padding-right: 3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +80,7 @@
 
   .stats-slim__value {
     padding-top: 15px;
-    width: 158px;
+    width: 159px;
     padding-bottom: 13px;
     font-size: 30px;
     line-height: 1.23;
@@ -86,6 +90,10 @@
     width: 127px;
     font-size: 14px;
     background-color: #ffffff;
+  }
+
+  .text--low {
+    width: 104px;
   }
 
   .stats-slim__description,
@@ -100,11 +108,12 @@
   .stats-slim__description {
     width: 174px;
     padding-top: 21px;
+    padding-right: 0;
   }
 
   .stats-slim__cost {
-    padding-top: 9px;
-    padding-left: 86px;
+    padding-top: 8px;
+    padding-left: 84px;
     width: 91px;
   }
 }
@@ -119,6 +128,10 @@
     width: 468px;
   }
 
+  .stats-slim__item:not(:last-child) {
+    margin-right: 43px;
+  }
+
   .stats-slim__description,
   .stats-slim__cost {
     z-index: 0;
@@ -129,6 +142,7 @@
     margin-bottom: 5px;
     text-align: left;
     padding-left: 0;
+    padding-right: 0;
   }
 
   .stats-slim__description {
@@ -147,6 +161,7 @@
   }
 
   .stats-slim__value {
+    width: 157px;
     margin-top: 0;
     padding-top: 16px;
     height: 42px;

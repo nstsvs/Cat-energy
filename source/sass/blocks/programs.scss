@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .programs {
-  margin-bottom: 0;
+  margin-bottom: -3px;
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +13,6 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    margin-bottom: 44px;
+    margin-bottom: 41px;
   }
 }

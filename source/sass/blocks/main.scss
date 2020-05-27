@@ -49,7 +49,15 @@
   line-height: 1.67;
   font-size: 36px;
   color: #111111;
-  border-top: 1px solid #ededed;
+}
+
+.main__catalog::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 253px;
+  width: 114%;
+  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,20 +85,24 @@
   }
 
   .main__catalog {
-    padding-top: 55px;
+    padding-top: 57px;
     margin: auto;
     padding-bottom: 74px;
     font-size: 60px;
     line-height: 1;
     border: none;
   }
+
+  .main__catalog::before {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main__order {
     top: -444px;
-    left: 6.3%;
-    width: 192px;
+    left: 77px;
+    width: 193px;
   }
 
   .main__image {
@@ -110,5 +122,9 @@
     font-size: 60px;
     line-height: 1;
     border: none;
+  }
+
+  .main__catalog::before {
+    display: none;
   }
 }

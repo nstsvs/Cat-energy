@@ -19,7 +19,7 @@
 .extra-products__title {
   width: 245px;
   margin-bottom: 34px;
-  margin-top: 0;
+  margin-top: 1px;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -28,11 +28,15 @@
 }
 
 .extra-products__item {
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: column;
   position: relative;
   border-top: 1px solid #cdcdcd;
+}
+
+.extra-products__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-products__list {
@@ -41,7 +45,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   list-style: none;
 }
 
@@ -70,7 +74,7 @@
 
   .extra-products::before {
     content: "";
-    top: 24px;
+    top: 23px;
     left: 0;
     z-index: -1;
     position: relative;
@@ -81,7 +85,7 @@
   }
 
   .extra-products__list {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   .extra-products__item {
@@ -93,7 +97,8 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    padding: 25px 37px;
+    padding: 22px 38px;
+    padding-right: 32px;
     border: 1px solid #d9d9d9;
     border-bottom: 0;
   }
@@ -104,7 +109,8 @@
 
   .extra-products__title {
     width: 370px;
-    padding-left: 36px;
+    margin-top: -2px;
+    padding-left: 38px;
     padding-bottom: 80px;
     margin-bottom: 0;
     font-size: 36px;
@@ -113,8 +119,9 @@
   }
 
   .extra-products__gift {
+    padding-left: 0;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
-    width: 708px;
+    width: 709px;
     height: 200px;
   }
 
@@ -122,7 +129,7 @@
     (min-resolution: 1.5dppx) {
     .extra-products__gift {
       background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
-      background-size: 708px 200px;
+      background-size: 709px 200px;
     }
   }
 }
@@ -143,7 +150,7 @@
 
   .extra-products::before {
     content: "";
-    top: 47px;
+    top: 39px;
     left: 0;
     position: relative;
     display: block;
@@ -154,8 +161,8 @@
 
   .extra-products__title {
     width: 368px;
-    margin-top: 22px;
-    margin-bottom: 77px;
+    margin-top: 14px;
+    margin-bottom: 80px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -191,7 +198,7 @@
     margin-top: 0;
     position: relative;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
-    width: 245px;
+    width: 247px;
     height: 289px;
   }
 

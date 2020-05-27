@@ -5,13 +5,13 @@
   background-color: #ffffff;
 }
 
-.contacts__form,
-.contacts__catalog {
+.contacts--form,
+.contacts--catalog {
   background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   justify-content: space-between;
   display: flex;
 }
@@ -19,15 +19,14 @@
 .contacts__wrapper-form,
 .contacts__wrapper-catalog {
   padding-top: 28px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
   justify-content: space-between;
   display: flex;
 }
 
 .contacts__partners {
-  width: 122px;
+  width: 124px;
   margin: 0;
-  padding-right: 19px;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
@@ -57,10 +56,10 @@
 .contacts__map::before {
   content: "";
   position: absolute;
-  top: 142px;
-  right: 258px;
-  width: 57px;
-  height: 57px;
+  top: 139px;
+  left: 40%;
+  width: 62px;
+  height: 62px;
   background: url("../img/map-pin.png") no-repeat;
   background-size: contain;
 }
@@ -88,8 +87,8 @@
     background-color: #ffffff;
   }
 
-  .contacts__catalog,
-  .contacts__form {
+  .contacts--catalog,
+  .contacts--form {
     background-color: #f2f2f2;
   }
 
@@ -97,14 +96,30 @@
   .contacts__wrapper,
   .contacts__wrapper-catalog {
     max-width: 630px;
+    padding-right: 5px;
     padding-top: 65px;
     padding-bottom: 58px;
     justify-content: space-between;
   }
 
+  .contacts__wrapper-catalog {
+    padding-top: 63px;
+  }
+
   .contacts__partners {
+    padding-left: 4px;
+    padding-top: 2px;
+    width: 154px;
     font-size: 20px;
     line-height: 1.25;
+  }
+
+  .contacts__form {
+    padding-top: 1px;
+  }
+
+  .contacts__br {
+    padding-right: 34px;
   }
 
   .contacts__adress {
@@ -128,10 +143,10 @@
   }
 
   .contacts__map::before {
-    top: 147px;
-    right: 346px;
-    width: 116px;
-    height: 111px;
+    top: 146px;
+    left: 324px;
+    width: 120px;
+    height: 118px;
   }
 
   .contacts__map iframe {
@@ -157,12 +172,12 @@
   .contacts__wrapper-catalog,
   .contacts__wrapper {
     position: absolute;
-    top: 93px;
+    top: 96px;
     left: 62px;
     width: 570px;
-    padding-top: 65px;
+    padding-top: 64px;
     padding-right: 88px;
-    padding-bottom: 57px;
+    padding-bottom: 58px;
     padding-left: 76px;
     z-index: 1;
     box-sizing: border-box;
@@ -171,7 +186,8 @@
   }
 
   .contacts__partners {
-    width: 123px;
+    padding: 0;
+    width: 154px;
   }
 
   .contacts__adress,
@@ -188,8 +204,8 @@
   }
 
   .contacts__map::before {
-    top: 147px;
-    right: 275px;
+    top: 151px;
+    left: 70.4%;
     width: 124px;
     height: 124px;
   }

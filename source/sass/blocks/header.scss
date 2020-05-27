@@ -1,9 +1,6 @@
 @import "global/variables.scss";
 
 .header__image {
-  background: url("../img/logo-mobile.svg") no-repeat;
-  width: 191px;
-  height: 39px;
   cursor: pointer;
 }
 
@@ -17,7 +14,6 @@
 
 @media (min-width: $tablet-width) {
   .header__image {
-    background: url("../img/logo-tablet.svg") no-repeat;
     width: 174px;
     height: 59px;
   }
@@ -42,8 +38,15 @@
     margin-bottom: 80px;
   }
 
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .header-index::before {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat;
+      background-size: 720px auto;
+    }
+  }
+
   .header__image {
-    background: url("../img/logo-desktop.svg") no-repeat;
     width: 196px;
   }
 }

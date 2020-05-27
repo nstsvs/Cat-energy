@@ -1,12 +1,13 @@
 @import "global/variables.scss";
 
 .form {
-  padding-bottom: 33px;
+  padding-bottom: 32px;
 }
 
 .form-title {
-  border-top: 1px solid #e6e6e6;
-  padding-top: 14px;
+  position: relative;
+  padding-top: 16px;
+  padding-left: 2px;
   margin-bottom: 25px;
   font-size: 36px;
   font-weight: 400;
@@ -14,8 +15,18 @@
   color: #111111;
 }
 
+.form-title::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 0;
+  width: 114%;
+  border-top: 1px solid #e6e6e6;
+}
+
 .form__text {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
+  padding-left: 1px;
   width: 226px;
   font-size: 14px;
   font-weight: 400;
@@ -27,7 +38,8 @@
 .form__button {
   display: flex;
   width: 280px;
-  margin-bottom: 19px;
+  margin-left: 1px;
+  margin-bottom: 20px;
   padding-bottom: 9px;
   padding-left: 81px;
   padding-top: 11px;
@@ -91,7 +103,7 @@
   }
 
   .form-title {
-    border-top: 0;
+    padding-left: 0;
     padding-top: 57px;
     margin-top: 0;
     margin-bottom: 29px;
@@ -99,7 +111,12 @@
     line-height: 1;
   }
 
+  .form-title::before {
+    display: none;
+  }
+
   .form__text {
+    padding-left: 2px;
     padding-top: 26px;
     margin-bottom: 67px;
     width: 323px;
@@ -116,16 +133,17 @@
   }
 
   .form__button {
-    width: 285px;
-    padding: 16px 60px;
-    margin-top: 0;
-    margin-bottom: 71px;
+    width: 283px;
+    padding: 16px 62px;
+    margin-top: 2px;
+    margin-left: 2px;
+    margin-bottom: 72px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .form__required {
-    padding-top: 16px;
+    padding-top: 19px;
     font-size: 16px;
     line-height: 1;
   }
@@ -135,7 +153,10 @@
   .form-title {
     margin: 74px auto 47px;
     padding: 0;
-    border-top: 0;
+  }
+
+  .form-title::before {
+    display: none;
   }
 
   .form {
@@ -156,7 +177,7 @@
 
   .form__fieldset {
     padding: 0;
-    width: 570px;
+    width: 568px;
     display: flex;
   }
 
@@ -173,12 +194,13 @@
     padding: 16px 207px;
     width: 568px;
     margin-top: 0;
+    margin-left: 0;
     margin-right: 40px;
   }
 
   .form__required {
     margin-top: 16px;
-    margin-left: 40px;
+    margin-left: 42px;
     padding: 0;
   }
 }

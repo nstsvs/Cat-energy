@@ -13,12 +13,16 @@
   color: #444444;
 }
 
+.html-academy__svg {
+  padding-top: 3px;
+}
+
 .html-academy__text:active {
   opacity: 0.3;
 }
 
 .html-academy__item:not(:last-child) {
-  margin-right: 124px;
+  margin-right: 140px;
 }
 
 .html-academy__logo {
@@ -35,7 +39,11 @@
 
 @media (min-width: $tablet-width) {
   .html-academy__item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 24px;
+  }
+
+  .html-academy__svg {
+    padding-top: 0;
   }
 }
 
@@ -44,7 +52,11 @@
     padding-top: 3px;
   }
 
+  .html-academy__svg {
+    padding-top: 7px;
+  }
+
   .html-academy__item:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 26px;
   }
 }
