@@ -5,7 +5,7 @@
 }
 
 .example-cat__title {
-  padding-top: 17px;
+  padding-top: 16px;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.67;
@@ -15,8 +15,8 @@
 .example-cat__text {
   width: 279px;
   margin: 0;
-  padding-top: 22px;
-  padding-bottom: 10px;
+  padding-top: 24px;
+  padding-bottom: 15px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -26,9 +26,18 @@
 
 @media (min-width: $tablet-width) {
   .example-cat {
+    position: relative;
     padding-bottom: 26px;
-    background: linear-gradient(to bottom, #ffffff 55%, #f2f2f2 55%);
+    background: linear-gradient(to bottom, #ffffff 55.5%, #f2f2f2 55%);
     background-color: #ffffff;
+  }
+
+  .example-cat::before {
+    content: "";
+    position: absolute;
+    top: -43px;
+    width: 114%;
+    border-top: 1px solid #e6e6e6;
   }
 
   .example-cat__title {
@@ -42,7 +51,7 @@
 
   .example-cat__text {
     padding-left: 0;
-    padding-bottom: 37px;
+    padding-bottom: 43px;
     width: 676px;
     font-size: 16px;
     line-height: 1.5;
@@ -50,7 +59,7 @@
 
   .example-cat__stats {
     display: flex;
-    margin-bottom: 246px;
+    margin-bottom: 247px;
   }
 }
 
@@ -58,6 +67,10 @@
   .example-cat {
     width: 100%;
     background: linear-gradient(to bottom, #ffffff 23%, #f2f2f2 22%);
+  }
+
+  .example-cat::before {
+    display: none;
   }
 
   .example-cat__wrap {
@@ -83,7 +96,7 @@
   .example-cat__text {
     padding-left: 0;
     padding-top: 147px;
-    padding-bottom: 68px;
+    padding-bottom: 75px;
     width: 431px;
   }
 }

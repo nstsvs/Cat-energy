@@ -1,7 +1,7 @@
 @import "global/variables.scss";
 
 .extra-products {
-  margin-bottom: 33px;
+  margin-bottom: 36px;
 }
 
 .extra-products::before {
@@ -13,13 +13,13 @@
   display: block;
   width: 100%;
   height: 3px;
-  background-image: linear-gradient(90deg,#68b738 70px,#68b738 400px);
+  background-image: linear-gradient(90deg, #68b738 70px, #68b738 400px);
 }
 
 .extra-products__title {
   width: 245px;
   margin-bottom: 34px;
-  margin-top: 0;
+  margin-top: 1px;
   font-size: 24px;
   font-weight: 400;
   line-height: 1;
@@ -28,11 +28,15 @@
 }
 
 .extra-products__item {
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   display: flex;
   flex-direction: column;
   position: relative;
   border-top: 1px solid #cdcdcd;
+}
+
+.extra-products__item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-products__list {
@@ -41,7 +45,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   list-style: none;
 }
 
@@ -49,31 +53,39 @@
   margin: 0;
   padding-left: 55px;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
-  width: 225px;
+  width: 280px;
   height: 289px;
+}
+
+@media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .extra-products__gift {
+    background: url("../img/gift-photo-mobile@2x.jpg") no-repeat;
+    background-size: 280px 289px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .extra-products {
     margin-top: -21px;
-    margin-bottom: -13px;
+    margin-bottom: 77px;
     padding-left: 0;
   }
 
   .extra-products::before {
     content: "";
-    top: 24px;
+    top: 23px;
     left: 0;
     z-index: -1;
     position: relative;
     display: block;
     width: 100%;
     height: 3px;
-    background-image: linear-gradient(90deg,#68b738 70px,#68b738 400px);
+    background-image: linear-gradient(90deg, #68b738 70px, #68b738 400px);
   }
 
   .extra-products__list {
-    margin-bottom: 73px;
+    margin-bottom: 69px;
   }
 
   .extra-products__item {
@@ -85,7 +97,8 @@
     flex-wrap: wrap;
     align-items: center;
     margin: 0;
-    padding: 25px 37px;
+    padding: 22px 38px;
+    padding-right: 32px;
     border: 1px solid #d9d9d9;
     border-bottom: 0;
   }
@@ -96,7 +109,8 @@
 
   .extra-products__title {
     width: 370px;
-    padding-left: 36px;
+    margin-top: -2px;
+    padding-left: 38px;
     padding-bottom: 80px;
     margin-bottom: 0;
     font-size: 36px;
@@ -105,15 +119,25 @@
   }
 
   .extra-products__gift {
+    padding-left: 0;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
-    width: auto;
+    width: 709px;
+    height: 200px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .extra-products__gift {
+      background: url("../img/gift-photo-tablet@2x.jpg") no-repeat;
+      background-size: 709px 200px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-products {
     margin-top: 0;
-    margin-bottom: 60px;
+    margin-bottom: 54px;
   }
 
   .extra-products__wrapper {
@@ -126,19 +150,19 @@
 
   .extra-products::before {
     content: "";
-    top: 47px;
+    top: 39px;
     left: 0;
     position: relative;
     display: block;
     width: 100%;
     height: 3px;
-    background-image: linear-gradient(90deg,#68b738 70px,#68b738 400px);
+    background-image: linear-gradient(90deg, #68b738 70px, #68b738 400px);
   }
 
   .extra-products__title {
     width: 368px;
-    margin-top: 22px;
-    margin-bottom: 76px;
+    margin-top: 14px;
+    margin-bottom: 80px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -158,7 +182,6 @@
   .extra-products__item {
     margin: 0;
     padding: 0;
-    align-items: baseline;
     max-width: inherit;
     flex-direction: row;
     border: none;
@@ -172,10 +195,18 @@
 
   .extra-products__gift {
     padding: 0;
-    margin-top: 5px;
+    margin-top: 0;
     position: relative;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
-    width: 245px;
+    width: 247px;
     height: 289px;
+  }
+
+  @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+    .extra-products__gift {
+      background: url("../img/gift-photo-desktop@2x.jpg") no-repeat;
+      background-size: 245px 289px;
+    }
   }
 }

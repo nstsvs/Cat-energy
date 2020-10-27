@@ -1,8 +1,11 @@
+@import "global/variables.scss";
+
 .extra-list__wrapper {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .extra-list__title {
+  padding-left: 1px;
   margin-top: 14px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -13,11 +16,13 @@
 }
 
 .extra-list__properties {
+  width: 284px;
   margin-bottom: -9px;
 }
 
 .extra-list__properties-text {
-  width: 231px;
+  padding-right: 0;
+  width: 116px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -25,6 +30,8 @@
 }
 
 .extra-list__properties-value {
+  width: 38px;
+  text-transform: uppercase;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   line-height: 1;
@@ -35,8 +42,8 @@
 .extra-list__button {
   padding-left: 111px;
   padding-right: 108px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.25;
@@ -57,14 +64,15 @@
 @media (min-width: $tablet-width) {
   .extra-list__wrapper {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     display: flex;
-    align-items: baseline;
+    align-items: flex-end;
     justify-content: space-between;
   }
 
   .extra-list__properties-text {
-    padding-right: 52px;
+    width: 105px;
+    padding-right: 47px;
     text-align: right;
     font-size: 16px;
     line-height: 1.25;
@@ -82,30 +90,32 @@
   }
 
   .extra-list__properties-value {
-    width: 73px;
+    width: 36px;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.25;
   }
 
   .extra-list__button {
-    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 276px;
-    padding-right: 294px;
+    padding-left: 285px;
+    padding-right: 287px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .extra-list__wrapper {
+    align-items: baseline;
     width: 617px;
     margin-bottom: 20px;
   }
 
   .extra-list__title {
-    margin-top: 31px;
-    margin-bottom: 0;
+    margin-top: 27px;
+    margin-bottom: 4px;
   }
 
   .extra-list__properties {
@@ -122,15 +132,15 @@
   }
 
   .extra-list__properties-value {
-    width: 79px;
+    width: 54px;
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
   }
 
   .extra-list__button {
     flex-grow: unset;
     width: 75px;
-    margin: 11px 0 0;
+    margin: -1px 1px 0;
     padding-left: 93px;
     padding-right: 77px;
     padding-top: 10px;

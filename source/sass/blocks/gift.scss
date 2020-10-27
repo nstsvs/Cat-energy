@@ -1,9 +1,11 @@
+@import "global/variables.scss";
+
 .gift__text {
   position: relative;
   top: 65%;
-  left: 3%;
+  left: 2%;
   margin: 0;
-  width: 159px;
+  width: 161px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -22,17 +24,17 @@
   background: url("../img/icon-gift.svg") no-repeat;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .gift__text {
     position: relative;
-    left: 56%;
-    top: 25%;
+    left: 424px;
+    top: 72px;
     text-align: left;
   }
 
   .gift__text::before {
-    top: -11px;
-    left: -209%;
+    top: -7px;
+    left: -206%;
   }
 }
 
@@ -48,7 +50,7 @@
   .gift__text::before {
     content: "";
     position: absolute;
-    top: -122px;
+    top: -123px;
     left: 33%;
     width: 60px;
     height: 60px;

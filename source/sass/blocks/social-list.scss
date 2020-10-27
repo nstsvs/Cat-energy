@@ -1,11 +1,11 @@
 @import "global/variables.scss";
 
 .social-list {
-  width: 268px;
+  width: 280px;
   display: flex;
   margin: 0;
-  padding-bottom: 18px;
-  padding-top: 23px;
+  padding-bottom: 19px;
+  padding-top: 22px;
   padding-left: 0;
   justify-content: center;
   align-items: center;
@@ -14,30 +14,38 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
+.social-list__item {
+  width: 20px;
+}
+
 .social-list__item:not(:last-child) {
   margin-right: 38px;
 }
 
 .social-list__icon-vk {
-  height: 12px;
-  width: 22px;
+  fill: #666666;
+  height: 13px;
+  width: 21px;
 }
 
 .social-list__icon-ig {
-  height: 17px;
+  fill: #666666;
+  height: 16px;
   width: 17px;
 }
 
 .social-list__icon-fb {
+  fill: #666666;
   height: 19px;
   width: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .social-list {
-    width: auto;
-    padding-top: 0;
-    padding-left: 21px;
+    justify-content: space-between;
+    width: 101px;
+    padding-top: 24px;
+    padding-left: 0;
     border: none;
   }
 
@@ -46,7 +54,7 @@
   }
 
   .social-list__item:not(:last-child) {
-    margin-right: 28px;
+    margin-right: 34px;
   }
 
   .social-list__icon-vk,
@@ -59,16 +67,23 @@
   .social-list__icon-vk:hover,
   .social-list__icon-ig:hover,
   .social-list__icon-fb:hover {
-    stroke: #68b738;
     fill: #68b738;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .social-list {
-    width: auto;
-    padding-left: 18px;
+    width: 129px;
+    padding-left: 24px;
+    padding-top: 25px;
     border: none;
+  }
+
+  .social-list--form,
+  .social-list--catalog {
+    width: 123px;
+    padding-left: 24px;
+    padding-top: 22px;
   }
 
   .social-list__item {
@@ -80,17 +95,24 @@
     margin-right: 0;
   }
 
-  .social-list__icon-vk,
-  .social-list__icon-ig,
+  .social-list__icon-vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__icon-ig {
+    width: 23px;
+    height: 23px;
+  }
+
   .social-list__icon-fb {
-    height: inherit;
-    width: inherit;
+    width: 14px;
+    height: 28px;
   }
 
   .social-list__icon-vk:hover,
   .social-list__icon-ig:hover,
   .social-list__icon-fb:hover {
-    stroke: #68b738;
     fill: #68b738;
   }
 

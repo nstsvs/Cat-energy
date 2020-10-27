@@ -2,9 +2,14 @@
 
 .main-nav {
   padding-top: 0;
+  padding-bottom: 1px;
 }
 
-.test {
+.main-nav__list {
+  padding-top: 0;
+}
+
+.main-nav__wrap {
   position: relative;
 }
 
@@ -23,30 +28,28 @@
 }
 
 .main-nav__toggle::before {
+  display: none;
   content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: #222;
-    transform: rotate(45deg);
-}
-
-.main-nav__toggle::after {
-  content: "";
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background-color: #222;
-    transform: rotate(-45deg);
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #222222;
+  box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
 }
 
 @media (min-width: $tablet-width) {
-  .test {
-    margin-top: 35px;
+  .main-nav {
+    padding-bottom: 0;
+  }
+
+  .main-nav__list {
+    padding-top: 0;
+  }
+
+  .main-nav__wrap {
+    margin-top: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,13 +65,15 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     padding-top: 55px;
+    padding-bottom: 0;
   }
 
   .main-nav__list {
     z-index: 1;
+    padding-top: 4px;
   }
 
-  .test {
+  .main-nav__wrap {
     max-width: 1300px;
     margin: 0 auto;
     justify-content: space-between;

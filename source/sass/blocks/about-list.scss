@@ -23,11 +23,20 @@
   color: #444444;
 }
 
+.text-br {
+  position: relative;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.29;
+  color: #444444;
+}
+
 .about-list__item-text::before {
   content: "";
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -2px;
+  left: 0;
   width: 60px;
   height: 60px;
   background-color: #68b738;
@@ -39,7 +48,7 @@
 .about-list__item-text--clock::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 3px;
   left: 4px;
   width: 50px;
   height: 50px;
@@ -48,10 +57,14 @@
 }
 
 .about-list__item-text--leaf::after {
+  top: 3px;
+  left: 5px;
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
 .about-list__item-text--powder::after {
+  left: 5px;
+  top: 2px;
   background-image: url("../img/advantage-powder@1x.png");
 }
 
@@ -60,6 +73,8 @@
 }
 
 .about-list__item-text--clock::after {
+  top: 3px;
+  left: 5px;
   background-image: url("../img/advantage-clock@1x.png");
 }
 
@@ -75,8 +90,7 @@
     position: relative;
     width: 206px;
     margin-right: 177px;
-    margin-bottom: 214px;
-    position: relative;
+    margin-bottom: 212px;
   }
 
   .about-list__item:last-child {
@@ -88,10 +102,16 @@
   }
 
   .about-list__item-text {
-    width: 273px;
+    width: 265px;
     padding-left: 0;
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .text-br {
+    display: flex;
+    line-height: 1.5;
+    font-size: 16px;
   }
 
   .about-list__item:nth-child(even) {
@@ -107,6 +127,24 @@
     width: 80px;
     height: 80px;
     background-color: #68b738;
+  }
+
+  .about-list__item-text--leaf::before {
+    top: -113px;
+  }
+
+  .about-list__item-text--powder::before {
+    top: -113px;
+    left: 1px;
+  }
+
+  .about-list__item-text--dining::before {
+    top: -112px;
+  }
+
+  .about-list__item-text--clock::before {
+    top: -112px;
+    left: 1px;
   }
 
   .about-list__item-text--leaf::after,
@@ -128,14 +166,19 @@
   }
 
   .about-list__item-text--powder::after {
+    left: 16px;
     background-image: url("../img/advantage-powder@1x.png");
   }
 
   .about-list__item-text--dining::after {
+    left: 15px;
+    top: -97px;
     background-image: url("../img/advantage-dining@1x.png");
   }
 
   .about-list__item-text--clock::after {
+    top: -97px;
+    left: 16px;
     background-image: url("../img/advantage-clock@1x.png");
   }
 
@@ -151,19 +194,29 @@
     font-weight: 400;
     font-size: 281px;
     line-height: 281px;
-    font-family: "Oswald","Arial",sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     color: #f2f2f2;
   }
 
+  .about-list__item--leaf::after {
+    left: 118px;
+  }
+
   .about-list__item--powder::after {
+    top: -137px;
+    left: 113px;
     content: "2";
   }
 
   .about-list__item--dining::after {
+    top: -136px;
+    left: 113px;
     content: "3";
   }
 
   .about-list__item--clock::after {
+    top: -136px;
+    left: 114px;
     content: "4";
   }
 }
@@ -196,11 +249,19 @@
   .about-list__item-text::before {
     content: "";
     position: absolute;
-    top: 42px;
-    left: -3px;
+    top: 43px;
+    left: -2px;
     width: 80px;
     height: 80px;
     background-color: #68b738;
+  }
+
+  .about-list__item-text--powder::before {
+    left: -2px;
+  }
+
+  .about-list__item-text--clock::before {
+    left: -2px;
   }
 
   .about-list__item-text--leaf::after,
@@ -218,6 +279,7 @@
   }
 
   .about-list__item-text--leaf::after {
+    left: 12px;
     background-image: url("../img/advantage-leaf@1x.png");
   }
 
@@ -226,10 +288,12 @@
   }
 
   .about-list__item-text--dining::after {
+    left: 12px;
     background-image: url("../img/advantage-dining@1x.png");
   }
 
   .about-list__item-text--clock::after {
+    left: 13px;
     background-image: url("../img/advantage-clock@1x.png");
   }
 
@@ -238,26 +302,29 @@
   .about-list__item--dining::after,
   .about-list__item--clock::after {
     content: "1";
-    top: 19px;
-    left: 111px;
+    top: 18px;
+    left: 115px;
     position: absolute;
     z-index: -1;
     font-weight: 400;
     font-size: 281px;
     line-height: 281px;
-    font-family: "Oswald","Arial",sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     color: #f2f2f2;
   }
 
   .about-list__item--powder::after {
+    left: 109px;
     content: "2";
   }
 
   .about-list__item--dining::after {
+    left: 110px;
     content: "3";
   }
 
   .about-list__item--clock::after {
+    left: 110px;
     content: "4";
   }
 }
